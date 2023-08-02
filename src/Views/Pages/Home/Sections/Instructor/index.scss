@@ -9,6 +9,8 @@
 		@apply w-full;
 		img {
 
+			border-radius: 50%;
+			filter: grayscale(10%); max-width: 160px; max-height: 150px;
 		}
 	}
 

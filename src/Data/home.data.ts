@@ -62,21 +62,21 @@ export const instructor = {
 	title: 'Collaborators',
 	people : [
 		{
-			name: 'Dr. Zahra Shakeri',
-			image: instructor_img,
+			name: 'Zahra Shakeri',
+			image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
 			description: 'Supervisor',
 		},{
 			name: 'Ziqi Shu',
-			image: instructor_img,
+			image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
 			description: 'Creator',
 		}
 		,{
 			name: 'Jiayu Liangm',
-			image: instructor_img,
+			image: 'https://hivelab-uoft.ca/images/team/Grace.JPG',
 			description: 'Creator',
 		},{
 			name: 'Yong Chen',
-			image: instructor_img,
+			image: 'https://hivelab-uoft.ca/images/team/yong.png',
 			description: 'Creator',
 		}
 
