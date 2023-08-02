@@ -1,0 +1,54 @@
+.about-us-layout {
+	@apply w-full h-full;
+	padding: 5% 8% 6%;
+
+	background-image: url(../../../../../Assets/Images/home/about-back1.svg),
+		url(../../../../../Assets/Images/home/about-back2.svg);
+	background-repeat: no-repeat;
+	background-position: right, left bottom;
+
+	.text {
+		.header {
+			@apply mb-9;
+			h4 {
+				color: $tertiary;
+			}
+			h2 {
+				color: #533163;
+			}
+			p {
+				@apply text-base;
+				color: #3b3b3b;
+
+				@include up(lg) {
+					width: 50ch;
+				}
+			}
+
+			img {
+				@apply w-full ml-auto;
+			}
+			a {
+				&:hover {
+					@apply text-primary underline transition-all;
+				}
+			}
+		}
+		.apply-btn {
+			@apply mt-16;
+			.fa-btn {
+				@apply flex-center text-white text-base font-medium px-16 w-1/3 py-3 rounded-none;
+				background-color: #533163;
+				clip-path: polygon(3% 0%, 100% 0, 100% 70%, 97% 100%, 0 100%, 0% 30%);
+
+				&:hover {
+					background-color: #41254d;
+				}
+			}
+		}
+	}
+}
+
+.open-link-tooltip {
+	@apply text-primary border border-primary;
+}

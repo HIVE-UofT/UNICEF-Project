@@ -1,0 +1,94 @@
+@import '../../Assets/scss/base/export.scss';
+
+.react-table-layout {
+	@apply w-full h-full relative;
+
+	.react-table {
+		@apply mt-0 overflow-x-auto pb-4;
+		scroll-behavior: smooth;
+
+		.panel-loader {
+			img {
+				height: 230px;
+				@apply py-10;
+			}
+		}
+
+		table {
+			@apply min-w-full rounded-2xl overflow-hidden;
+		}
+
+		tr {
+			@apply flex flex-row items-stretch rounded-2xl w-full overflow-hidden;
+
+			th {
+				@apply px-3;
+			}
+		}
+
+		thead {
+			@apply block shadow-light rounded-2xl;
+			background: rgb(174, 75, 105);
+			background: linear-gradient(163deg, rgba(174, 75, 105, 0.3981967787114846) 9%, rgba(246, 228, 234, 1) 75%);
+
+			th {
+				font-size: 0.9rem !important;
+				@apply flex-center text-black text-opacity-80 font-medium h-16;
+
+				.th-sort-icon {
+					@apply ml-1 text-primary;
+
+					.fa-icon {
+						@apply w-3.5;
+					}
+				}
+
+				&.angle-wrapper {
+					@apply p-0;
+				}
+			}
+
+			.th-sortable {
+				@apply cursor-pointer transition-all hover:bg-secondary hover:bg-opacity-30;
+			}
+
+			.th-sorted {
+				@apply bg-secondary bg-opacity-70;
+			}
+		}
+
+		tbody {
+			@apply w-full block;
+
+			tr {
+				min-height: 4.5rem;
+				@apply bg-gray-50 w-full bg-opacity-0 hover:bg-opacity-20 mt-3 shadow-sm border border-opacity-40;
+
+				&:first-of-type {
+					@apply mt-8;
+				}
+			}
+
+			td {
+				@apply flex-center py-3 font-medium text-center px-2;
+			}
+		}
+
+		.table-loader {
+			@apply absolute inset-0 flex-center bg-light bg-opacity-70;
+		}
+
+		&::-webkit-scrollbar {
+			height: 7px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			border-radius: 50px;
+			@apply bg-opacity-90 hover:bg-opacity-100;
+		}
+	}
+
+	.table-no-record {
+		@apply w-full font-semibold flex-center py-8 opacity-75;
+	}
+}

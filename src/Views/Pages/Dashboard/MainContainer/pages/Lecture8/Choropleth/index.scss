@@ -1,0 +1,26 @@
+.chart {
+	.result {
+		.details {
+			.rs-panel-header {
+				@apply text-sm py-3 px-4;
+
+				svg {
+					top: 15px;
+					right: 16px;
+				}
+			}
+
+			.rs-panel-body {
+				@apply px-4 pb-3;
+
+				pre {
+					width: 100%;
+					position: relative;
+					border-radius: 1rem;
+					padding-left: 1rem;
+					padding: 0.5rem 1rem !important;
+				}
+			}
+		}
+	}
+}

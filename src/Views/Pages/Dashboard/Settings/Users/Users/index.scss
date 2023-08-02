@@ -1,0 +1,113 @@
+.users-layout {
+	// margin-top: 5.25rem;
+
+	@apply flex flex-col justify-center;
+	height: 95%;
+
+	.fa-icon {
+		@apply w-5;
+	}
+
+	.box {
+		@apply mx-auto w-11/12 px-8 pt-4 rounded-xl;
+
+		@include up(1550px) {
+			@apply pb-6;
+		}
+
+		.box-header {
+			@apply pt-6 pb-5;
+
+			.fa-btn {
+				@apply rounded-full pl-5 pr-6 py-1.5 bg-primary bg-opacity-10 hover:bg-opacity-20 transition-none;
+
+				.fa-icon {
+					@apply text-primary w-5 ml-0 transform scale-100 transition-all duration-100;
+				}
+
+				&:hover {
+					@apply bg-opacity-90 text-white;
+
+					.fa-icon {
+						@apply scale-110 text-white;
+					}
+				}
+			}
+
+			.right-header-search {
+				@apply flex items-center;
+
+				.labeled-wrapper {
+					min-height: 2.2rem !important;
+					height: 2.2rem;
+					@apply mt-0 rounded-2xl;
+
+					.children {
+						height: 2.2rem;
+					}
+
+					input {
+						height: 2.2rem !important;
+
+						&::-webkit-input-placeholder {
+							@apply opacity-20 text-sm;
+						}
+					}
+				}
+				.editable-input {
+					@apply w-52;
+
+					.fa-icon {
+						@apply ml-3 w-4 opacity-80;
+					}
+				}
+
+				.fa-btn {
+					@apply ml-4;
+				}
+			}
+		}
+
+		.box-body {
+			@apply pt-2;
+
+			@include up(1550px) {
+				@apply pt-8;
+			}
+		}
+
+		.left-side {
+			h2 {
+				@apply flex items-center;
+				color: $primary !important;
+				font-size: 1.8rem !important;
+			}
+
+			.fa-icon {
+				@apply w-8 mr-4;
+			}
+		}
+
+		.react-table {
+			thead {
+				@apply shadow-lg;
+			}
+			tbody {
+				tr {
+					@apply animate-fade-in;
+				}
+			}
+			.action-btn {
+				@apply cursor-pointer hover:text-primary opacity-60 hover:opacity-100 transition-all;
+			}
+
+			.disabled-status {
+				@apply text-error;
+			}
+
+			.active-status {
+				@apply text-success;
+			}
+		}
+	}
+}

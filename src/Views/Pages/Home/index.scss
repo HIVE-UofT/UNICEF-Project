@@ -1,0 +1,17 @@
+@import '@assets/scss/base/export.scss';
+
+.home-layout {
+	@apply w-full h-full;
+	background-color: #fbfbfb;
+
+	h2 {
+		@apply text-primary text-4xl font-semibold mb-2;
+		line-height: 42.19px !important;
+	}
+
+	h4 {
+		@apply text-sm font-semibold;
+		color: $secondary;
+		line-height: 23px;
+	}
+}

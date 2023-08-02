@@ -1,0 +1,153 @@
+.signin-drawer {
+	@apply h-full overflow-hidden;
+	width: 100% !important;
+
+	.rs-drawer-body {
+		@apply overflow-hidden px-0 py-0;
+
+		.rs-btn-icon {
+			@apply hidden;
+		}
+
+		.left-col {
+			@apply flex justify-center flex-col h-full relative;
+			padding-left: 8%;
+
+			.logo {
+				@apply absolute top-6 -ml-1;
+			}
+			.form-header {
+				@apply mb-16;
+				width: 85%;
+				h3 {
+					@apply text-primary text-2xl font-semibold mb-2;
+				}
+
+				p {
+					@apply text-tertiary text-sm;
+				}
+
+				.link-to-contact-us {
+					@apply text-primary cursor-pointer hover:text-secondary transition-colors;
+				}
+			}
+
+			.contact-form {
+				// @apply w-5/6;
+				width: 85%;
+				.labeled-wrapper {
+					@apply relative flex flex-col;
+					border-radius: 10px;
+					background-color: #f2f2f2;
+					.label {
+						@apply ml-0 pl-0 mb-2 text-black text-sm -top-6;
+						transition: all 0.3s;
+					}
+
+					input {
+						@apply p-4 text-sm;
+						background-color: #f2f2f2;
+						border-radius: 10px;
+
+						&::placeholder {
+							-webkit-text-fill-color: #8e8e8e;
+						}
+					}
+					.labeled-wrapper-outline {
+						@apply border-none;
+					}
+				}
+				.editable-input {
+					@apply w-full transition-all mb-3;
+					&:first-of-type {
+						@apply mb-10;
+					}
+				}
+				.dirty-input {
+					.label {
+						@apply text-tertiary;
+					}
+					input {
+						@apply text-black;
+					}
+				}
+
+				.password-control {
+					@apply mb-14 flex justify-between items-center text-black;
+					font-size: 11px;
+
+					.rs-checkbox-checker {
+						@apply pl-5;
+						line-height: inherit;
+
+						.rs-checkbox-wrapper {
+							left: 0;
+							width: 14px;
+							height: 14px;
+
+							&::before {
+								width: 14px;
+								height: 14px;
+							}
+
+							.rs-checkbox-inner {
+								&::before {
+									width: 14px;
+									height: 14px;
+								}
+
+								&::after {
+									width: 5px;
+									height: 8px;
+									margin-left: 4.5px;
+								}
+							}
+						}
+					}
+
+					a {
+						@apply text-primary cursor-pointer;
+					}
+				}
+
+				.fa-btn {
+					@apply flex-center text-white text-base font-medium w-full py-3 rounded-none;
+					background-color: #c9c9c9;
+					clip-path: polygon(4% 0%, 100% 0, 100% 70%, 96% 100%, 0 100%, 0% 30%);
+
+					&.active-btn {
+						@apply bg-primary;
+						&:hover {
+							background-color: #510323;
+						}
+					}
+				}
+			}
+		}
+
+		.right-col {
+			@apply h-full;
+
+			.content {
+				@apply w-full h-full relative;
+				.header {
+					@apply text-center flex flex-col items-center;
+					h2 {
+						@apply text-primary text-4xl font-semibold mb-4;
+						line-height: 41.02px;
+					}
+
+					p {
+						@apply text-base;
+						color: #3b3b3b;
+						// line-height: 23px;
+						width: 55ch;
+					}
+				}
+				img {
+					@apply absolute inset-0 object-contain w-full h-full;
+				}
+			}
+		}
+	}
+}

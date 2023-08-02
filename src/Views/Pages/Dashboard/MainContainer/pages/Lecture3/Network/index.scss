@@ -1,0 +1,36 @@
+.chart {
+	.fa-btn {
+		@apply text-sm font-medium text-white hover:bg-primary hover:text-white border-none px-5 py-1.5;
+		background-color: $secondary;
+	}
+	.l3-tutorial {
+		@apply w-full h-screen animate-fade-in;
+		// height: calc(100% - 3rem);
+		height: 1095rem;
+		@include up(dxl) {
+			height: 1073rem;
+		}
+		transition: height 0.3s;
+		// height: 2240vh;
+
+		.iframe {
+			@apply h-full w-full overflow-hidden;
+			p {
+				@apply w-full;
+				img {
+					@apply w-6 m-auto;
+					margin: auto !important;
+				}
+			}
+		}
+	}
+}
+
+.dashboard-sidebar-open {
+	.l3-tutorial {
+		height: 1115rem;
+		@include up(dxl) {
+			height: 1085rem;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.tableau {
+	@apply w-full h-full animate-fade-in;
+	height: calc(100% - 3rem);
+
+	.iframe {
+		@apply h-full w-full;
+		p {
+			@apply w-full;
+			img {
+				@apply w-6 m-auto;
+				margin: auto !important;
+			}
+		}
+	}
+}

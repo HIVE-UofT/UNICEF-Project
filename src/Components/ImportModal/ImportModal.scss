@@ -1,0 +1,153 @@
+.import-modal {
+	@apply mt-0;
+	.rs-modal-content {
+		@apply flex-center flex-col rounded-3xl px-10;
+		.rs-modal-body {
+			@apply h-full transition-all;
+			transition-timing-function: ease-out;
+			transition-duration: 50ms;
+			.modal-icon {
+				@apply w-12 h-12 rounded-full bg-tertiary m-auto flex-center;
+				.fa-icon {
+					fill: $primary;
+					@apply w-5 absolute;
+				}
+			}
+			.modal-text {
+				@apply mb-6 text-center text-xl font-medium text-black mt-3;
+			}
+			.labeled-wrapper {
+				@apply relative flex flex-col h-10;
+				border-radius: 10px;
+				min-height: 2.5rem;
+				background-color: #f1f1f1;
+				.label {
+					@apply absolute text-sm text-black pointer-events-none transition-transform;
+					transform: translate(0, 27px) scale(1);
+					transform-origin: top left;
+					line-height: 1;
+				}
+
+				input {
+					@apply p-3 h-10 text-black;
+					background-color: #f1f1f1;
+					border-radius: 10px;
+				}
+				.labeled-wrapper-outline {
+					@apply border-none;
+				}
+			}
+			.selector {
+				@apply mb-4;
+				svg {
+					top: 10px !important;
+				}
+
+				.rs-picker-toggle,
+				.children,
+				.rs-picker-select {
+					@apply py-0 h-10;
+				}
+
+				.rs-picker-toggle-value {
+					@apply text-sm text-black;
+				}
+				&.specified-collection {
+					.rs-picker-toggle-value {
+						color: #a7a7a7;
+					}
+				}
+			}
+			.editable-input {
+				@apply w-full transition-all mb-6;
+				.label {
+					color: #424242;
+				}
+			}
+			.dirty-input .label,
+			.specified-collection .label {
+				transform: translate(-13px, 0px) scale(0.85);
+				color: #cacaca;
+			}
+
+			.rs-uploader {
+				@apply mt-6 flex flex-col-reverse;
+				.rs-uploader-trigger-btn {
+					@apply pt-4 pb-8 rounded-xl text-black text-base;
+					border: 1.1px solid #a7a7a7;
+
+					.modal-icon {
+						@apply mb-2;
+					}
+				}
+
+				.rs-uploader-file-items {
+					@apply mt-0 mb-4 overflow-y-auto;
+					max-height: 20vh;
+
+					&::-webkit-scrollbar {
+						width: 0.3rem;
+						margin-left: 2rem;
+					}
+
+					&::-webkit-scrollbar-track {
+						@apply rounded bg-gray-light;
+					}
+
+					&::-webkit-scrollbar-thumb {
+						@apply rounded bg-custom-gray-base;
+					}
+
+					.rs-uploader-file-item {
+						@apply rounded-3xl;
+						&:not(:last-of-type) {
+							@apply mb-2;
+						}
+						border: 1.2px solid #a7a7a7;
+
+						// .rs-uploader-file-item-icon-wrapper,
+						.rs-uploader-file-item-size {
+							@apply hidden;
+						}
+
+						&:not(.rs-uploader-file-item-has-error) {
+							.rs-uploader-file-item-title {
+								@apply text-black;
+							}
+						}
+					}
+				}
+			}
+
+			.result-btn {
+				@apply mt-8 py-0 w-full flex-center text-white text-lg font-medium transition-colors;
+				line-height: 40px;
+				background-color: #d1d1d1;
+
+				&.result-active {
+					@apply bg-primary;
+				}
+			}
+
+			&::-webkit-scrollbar,
+			&::-webkit-scrollbar-track,
+			&::-webkit-scrollbar-thumb {
+				display: none;
+			}
+		}
+	}
+}
+
+.collection-menu {
+	@apply px-1 py-2;
+	background-color: #f1f1f1;
+	.rs-picker-select-menu-item {
+		@apply text-black;
+		&:hover {
+			@apply bg-primary text-white;
+		}
+	}
+	.rs-picker-select-menu-item-active {
+		@apply bg-transparent text-primary;
+	}
+}

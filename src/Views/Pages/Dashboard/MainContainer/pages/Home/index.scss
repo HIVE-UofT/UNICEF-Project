@@ -1,0 +1,26 @@
+.dashboard-home {
+	@apply animate-fade-in;
+	padding: 2% 2% 1.5%;
+	.header {
+		margin-bottom: 2%;
+		h2 {
+			@apply text-black text-2xl font-semibold mb-3;
+		}
+		p {
+			@apply text-tertiary text-lg;
+			line-height: 24px;
+		}
+	}
+
+	.content {
+		.content-header {
+			margin-bottom: 5%;
+			h3 {
+				@apply text-primary text-base font-semibold;
+			}
+			p {
+				@apply text-tertiary text-sm;
+			}
+		}
+	}
+}

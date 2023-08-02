@@ -1,0 +1,18 @@
+.image-previewer {
+	@apply rounded-md transition-all;
+}
+
+.image-previewer-popover {
+	@apply p-1 bg-primary bg-opacity-30 border-2 border-primary border-dashed;
+	.img-main {
+		@apply transition-all;
+		max-width: 530px;
+		max-height: 530px;
+		min-width: 140px;
+		min-height: 140px;
+		box-shadow: 0 0 100px 1000px rgba($color: $primary, $alpha: 0.3);
+	}
+	.rs-popover-arrow::after {
+		@apply hidden;
+	}
+}

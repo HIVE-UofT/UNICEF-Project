@@ -1,0 +1,56 @@
+.home-chart {
+	@apply w-full h-full flex-center;
+	padding: 6% 8% 5%;
+	// padding-top: 6%;
+	// padding-bottom: 5%;
+
+	background: url(../../../../../Assets/Images/home/chart-back.svg), no-repeat;
+	background-size: cover;
+
+	.chart-text {
+		@apply mt-2;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#fbfbfb 0%,
+			rgba(251, 251, 251, 0.927083) 44.27%,
+			rgba(251, 251, 251, 0.56) 100%
+		);
+
+		p {
+			@apply text-tertiary text-base;
+			width: 48ch;
+			line-height: 25px;
+
+			@include down(xl) {
+				@apply w-11/12;
+			}
+		}
+	}
+	.chart-swiper {
+		@include down(xl) {
+			height: 60vh;
+		}
+
+		.swiper-slide {
+		}
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			@apply bottom-0 right-0 left-2 bg-primary text-white opacity-100 w-8 h-8 rounded-full transition-all;
+			top: 92%;
+
+			&::after {
+				@apply font-semibold text-xs;
+			}
+
+			&.swiper-button-disabled {
+				@apply opacity-100;
+				background-color: #c9c9c9;
+			}
+		}
+
+		.swiper-button-next {
+			@apply left-16;
+		}
+	}
+}

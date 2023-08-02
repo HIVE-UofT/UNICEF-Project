@@ -1,0 +1,2 @@
+export const markdown =
+	'Before using R to implement the network graph, it is essential to first review and understand the basic concepts of natural language processing needed to clean and prepare the data for this visualization. This includes tasks such as removing stop words, stemming or lemmatization, and other pre-processing techniques to ensure that the data is in a format that can be effectively used to create the network graph.';

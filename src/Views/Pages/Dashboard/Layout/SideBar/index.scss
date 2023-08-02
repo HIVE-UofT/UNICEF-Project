@@ -1,0 +1,165 @@
+$sidebar-open-width: 230px;
+$sidebar-close-width: 80px;
+
+.dashboard-sidebar-layout {
+	width: $sidebar-close-width;
+	// min-width: $sidebar-close-width;
+	@apply bg-primary h-full transition-all flex flex-col relative;
+	transition-duration: 0.5s;
+	z-index: 45;
+
+	.sidebar-header {
+		@apply overflow-hidden;
+		.logo-container {
+			@apply px-3.5 pt-4 bg-white;
+			height: 110px;
+			width: $sidebar-open-width;
+			.logo {
+				@apply select-none pointer-events-none h-full;
+				width: 50px;
+				background-image: url(../../../../../Assets/icons/logo-with-text.svg);
+				background-repeat: no-repeat;
+				transition: width 0.5s;
+			}
+		}
+	}
+
+	.sidebar-menu {
+		@apply transition-all h-full pt-4 overflow-y-auto;
+		// height: calc(100% - 230px);
+		transition-duration: 0.5s;
+
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+
+		&::-webkit-scrollbar-track {
+			@apply hidden;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			@apply hidden;
+		}
+
+		.rs-panel-header {
+			// height: 50px;
+		}
+	}
+
+	.sidebar-menu {
+		.sidebar-item-layout {
+			.header {
+				.title {
+					@apply mb-1.5;
+				}
+			}
+			&:first-of-type {
+				// @apply mb-6;
+				.header {
+					.title {
+						@apply mb-3;
+					}
+				}
+			}
+			.header {
+				.arrow {
+					@apply mr-3;
+				}
+				.title {
+					width: $sidebar-open-width - 100px;
+				}
+			}
+		}
+	}
+	.sidebar-item-layout {
+		.rs-panel-collapse {
+			p {
+				width: 150px;
+				font-size: 12px;
+				margin-bottom: 3px;
+			}
+			.item {
+				@apply -mt-0.5;
+				&:last-of-type {
+					@apply mb-7;
+				}
+			}
+		}
+	}
+
+	.sidebar-footer {
+		@apply mt-auto pt-2 flex flex-col;
+		// height: 150px;
+
+		.sidebar-toggle-btn {
+			@apply flex-center select-none cursor-pointer text-white
+            transition-all rounded-full mb-6 mt-2;
+			background-color: #ae4b69;
+			margin-left: ($sidebar-close-width - 30px)/2;
+			width: 30px;
+			height: 30px;
+			.fa-icon {
+				width: 18px;
+				height: 18px;
+				@apply ml-0.5;
+			}
+			&:hover {
+				@apply opacity-100;
+			}
+		}
+
+		.log-out {
+			height: 45px;
+			.fa-icon {
+				transform: rotate(180deg) translateX(0.15rem) !important;
+			}
+		}
+
+		.footer-dropdown,
+		.log-out {
+			@apply hover:opacity-100 transition-opacity;
+		}
+	}
+
+	&:not(.dashboard-sidebar-open) {
+		.title {
+			@apply opacity-0;
+		}
+	}
+}
+
+.dashboard-sidebar-open {
+	.dashboard-sidebar-layout {
+		width: $sidebar-open-width;
+		// min-width: $sidebar-open-width;
+
+		.sidebar-header {
+			.logo {
+				width: $sidebar-open-width;
+				transition: width 0.5s;
+			}
+		}
+
+		.sidebar-footer {
+			.footer-dropdown {
+				.fa-btn {
+					width: 120px;
+
+					.fa-icon {
+						@apply ml-0;
+					}
+				}
+			}
+		}
+
+		.sidebar-menu {
+			.header .title {
+				height: auto;
+			}
+		}
+	}
+
+	.sidebar-toggle-btn {
+		@apply transform -rotate-180;
+	}
+}

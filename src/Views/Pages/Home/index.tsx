@@ -1,0 +1,20 @@
+import './index.scss';
+import Chart from './Sections/Chart';
+import AboutUs from './Sections/AboutUs';
+import Vision from './Sections/Vision/index';
+import ContactUs from './Sections/ContactUs/index';
+import Instructor from './Sections/Instructor/index';
+
+const Home = () => {
+	return (
+		<div className='home-layout'>
+			<Vision />
+			<Chart />
+			<Instructor />
+			<AboutUs />
+			<ContactUs />
+		</div>
+	);
+};
+
+export default Home;

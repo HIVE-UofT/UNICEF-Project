@@ -1,0 +1,58 @@
+.card {
+	@apply bg-white px-5;
+	height: 105%;
+	box-shadow: 4px 4px 10px rgba(197, 197, 197, 0.15);
+	border-radius: 15px;
+
+	.image {
+		// @apply relative;
+		img {
+			@apply relative mx-auto -top-14;
+		}
+	}
+
+	.header {
+		@apply text-center -mt-12 pb-3;
+		border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+		h3 {
+			@apply text-xl text-black font-bold;
+		}
+		h4 {
+			@apply text-primary text-sm;
+		}
+	}
+
+	.content {
+		@apply h-full;
+		h4 {
+			@apply text-sm text-black font-semibold mb-1 mt-2;
+		}
+		.data-item-col,
+		.chart-item-col {
+			@apply px-0 py-1 text-center font-medium mb-1.5;
+
+			&.first {
+				margin-right: 4%;
+			}
+			// opacity: 0.7;
+			border-radius: 18px;
+			font-size: 11px;
+		}
+		.content-data {
+			height: 25%;
+			.data-item-col {
+				@apply text-white;
+				background: rgba(99, 8, 46, 0.702);
+				width: 48%;
+			}
+		}
+
+		.content-chart {
+			.chart-item-col {
+				background: rgba(230, 203, 179, 0.74);
+				color: #3b3b3b;
+				width: 48%;
+			}
+		}
+	}
+}

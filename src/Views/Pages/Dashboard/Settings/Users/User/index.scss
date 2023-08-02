@@ -1,0 +1,291 @@
+.user-layout-container {
+	@apply flex-center;
+	height: 95%;
+
+	.user-layout {
+		@apply pb-16 w-11/12 md:w-full h-full flex-center mx-auto;
+
+		.fa-icon {
+			@apply w-4;
+		}
+
+		.panel-loader-wrapper {
+			@apply flex-center;
+		}
+
+		.box {
+			max-width: 800px;
+
+			@apply px-8 pb-4;
+
+			.rs-col {
+				@apply py-3 px-3;
+
+				.labeled-wrapper {
+					@apply rounded-2xl;
+				}
+			}
+
+			.fa-btn {
+				@apply py-1.5 mx-2 rounded-2xl transition-all duration-200;
+			}
+
+			.box-header {
+				padding-top: 0.75rem !important;
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+
+				.header {
+					@apply flex items-center;
+
+					.r-power-off {
+						@apply text-primary ml-6 w-5 opacity-60 hover:opacity-80 cursor-pointer;
+					}
+
+					.img-wrapper {
+						@apply w-24 h-24 rounded-2xl bg-gray-50 bg-opacity-20 flex-center relative;
+
+						img {
+							@apply w-full h-full rounded-2xl;
+						}
+
+						.fa-icon {
+							@apply mr-0 text-gray-200;
+						}
+
+						.r-paperclip {
+							@apply absolute -top-2.5 left-2 transform rotate-90 text-primary;
+						}
+
+						.s-user {
+							@apply w-10;
+						}
+
+						.footer-wrapper {
+							@apply absolute bottom-0 left-0 right-0 h-0 w-full bg-black bg-opacity-50 rounded-b-2xl overflow-hidden flex-center transition-all duration-300;
+
+							.s-camera {
+								@apply text-black text-opacity-80 cursor-pointer hover:text-opacity-100 transition-all duration-300;
+							}
+						}
+
+						&:hover {
+							.footer-wrapper {
+								@apply h-8;
+							}
+						}
+					}
+				}
+
+				.fa-btn {
+					@apply rounded-full pl-5 pr-6  bg-primary bg-opacity-10 hover:bg-opacity-20 transition-none;
+
+					.fa-icon {
+						@apply text-primary w-4 ml-0 transform scale-100 transition-all duration-100;
+					}
+
+					&:hover {
+						@apply bg-opacity-90 text-white;
+
+						.fa-icon {
+							@apply scale-110 text-white;
+						}
+					}
+				}
+			}
+
+			.rs-panel-body {
+				@apply px-1 py-0;
+			}
+
+			.box-body {
+				@apply pt-6 pb-4;
+
+				.user-layout-footer {
+					@apply flex items-center justify-end w-full mt-8;
+
+					.fa-btn {
+						@apply px-10;
+					}
+				}
+
+				.editable-input {
+					.fa-icon {
+						@apply mr-3 opacity-70 cursor-pointer hover:opacity-80;
+					}
+				}
+
+				.radio-group {
+					@apply mt-3 pl-4;
+
+					.label {
+						@apply pt-2 font-medium;
+					}
+				}
+			}
+
+			.left-side {
+				@apply flex items-center;
+				font-size: 1.4rem !important;
+
+				.fa-icon {
+					@apply w-6 mr-4;
+				}
+			}
+		}
+
+		&.disabled {
+			.box-body {
+				.radio-group {
+					cursor: default !important;
+				}
+			}
+		}
+	}
+
+	.under-box-wrapper {
+		@apply -mt-5 relative;
+
+		.back-btn {
+			@apply bg-transparent border-0 absolute -left-2 top-0 text-primary flex-center text-opacity-80 hover:text-opacity-100;
+
+			.fa-icon {
+				@apply transition-all duration-100 transform;
+			}
+
+			&:hover {
+				.fa-icon {
+					@apply -translate-x-1.5;
+				}
+			}
+		}
+
+		.logout-btn {
+			@apply absolute right-0 top-0 border-0 bg-primary bg-opacity-10 border-b border-primary border-opacity-30 hover:bg-opacity-10 text-primary px-4 py-1.5 filter rounded-3xl transform transition-all duration-200;
+
+			.fa-icon {
+				@apply transform rotate-180 transition-all duration-100;
+			}
+
+			&:hover {
+				@apply border-b-4 -translate-y-1;
+			}
+		}
+	}
+}
+.rs-modal {
+	.rs-modal-content {
+		@apply rounded-2xl;
+	}
+
+	.fa-icon {
+		@apply w-4 mr-2;
+	}
+
+	.rs-modal-header {
+		@apply text-primary border-b-0;
+	}
+
+	.modal-footer {
+		@apply flex items-center justify-between;
+
+		.fa-btn {
+			@apply w-24 flex-center mt-4;
+		}
+
+		.yes-btn {
+			@apply bg-primary bg-opacity-10 text-primary hover:bg-opacity-80 hover:text-white;
+		}
+
+		.cancel-btn {
+			@apply border border-dashed border-gray-50;
+		}
+	}
+}
+
+.logout-modal {
+	.rs-modal-header {
+		@apply flex-center py-6 pr-0;
+
+		.logout-icon {
+			@apply border p-3 flex-center rounded-full border-error bg-error bg-opacity-5 text-error;
+
+			.fa-icon {
+				margin: 0 !important;
+				@apply transform rotate-180 w-6;
+			}
+		}
+	}
+
+	.logout-text {
+		@apply font-semibold text-lg text-center flex-center px-6 text-black;
+	}
+
+	.modal-footer {
+		@apply justify-center;
+
+		@apply my-6;
+
+		.fa-btn {
+			@apply text-lg w-36 rounded-xl mx-3;
+
+			&.yes-btn {
+				@apply bg-error text-white transition-all duration-300;
+
+				&:hover {
+					@apply bg-red-800;
+				}
+			}
+
+			&.cancel-btn {
+				color: #17bdb7;
+				border: 1px solid #17bdb7;
+
+				@apply bg-transparent  hover:text-white;
+
+				&:hover {
+					background-color: #17bdb7;
+				}
+			}
+		}
+	}
+}
+
+.access-modal {
+	.rs-modal-header {
+		@apply font-bold px-4 text-lg;
+	}
+
+	.modal-footer {
+		@apply mt-6;
+
+		.yes-btn {
+			@apply bg-primary text-white;
+		}
+	}
+}
+
+.rs-check-tree {
+	height: 90vh !important;
+
+	&::-webkit-scrollbar {
+		@apply w-1;
+	}
+	&::-webkit-scrollbar-thumb {
+		@apply bg-primary rounded-sm;
+	}
+}
+
+.media-picker-modal-layout {
+	.rs-modal-body {
+		min-height: 9rem;
+		@apply overflow-hidden flex-center pt-0;
+
+		.rs-uploader-trigger-btn {
+			@apply pt-5;
+		}
+		svg {
+			@apply hidden;
+		}
+	}
+}

@@ -1,0 +1,129 @@
+.sidebar-item-layout {
+	@apply transition-all 
+	rounded-xl cursor-default;
+
+	.rs-panel-header {
+		@apply py-2 pr-3 cursor-default;
+		// max-height: 60px;
+	}
+
+	.rs-panel-body {
+		@apply px-10 py-0 cursor-default;
+		// height: 0;
+		transition: height 0.5s;
+	}
+
+	.header {
+		@apply flex justify-between cursor-pointer;
+
+		.active-circle {
+			@apply h-2 w-2 animate-fade-in;
+			fill: $secondary !important;
+		}
+		.title {
+			@apply transform -translate-x-4
+			transition-all opacity-0 ml-8 font-medium;
+			color: #d6d6d6;
+			transition-duration: 0.3s;
+			div {
+				font-size: 12px;
+				@apply opacity-80;
+
+				&:first-of-type {
+					// line-height: 1rem;
+					@apply mt-1;
+				}
+				&:not(:first-of-type) {
+					line-height: 1rem;
+					// @apply -mt-1;
+				}
+			}
+		}
+		.icon {
+			@apply absolute ml-2.5 flex-center flex-col transform transition-all;
+			color: #484848;
+			--tw-translate-x: -0.1rem;
+			img {
+				width: 30px;
+			}
+			.fa-icon {
+				fill: #d6d6d6;
+				width: 18px;
+			}
+			svg {
+				path {
+					fill: #d6d6d6;
+					transition: fill 0.3s;
+				}
+			}
+		}
+		.arrow {
+			@apply w-4 h-4 mt-1 transition-all;
+			fill: #d6d6d6;
+
+			&.arrow-up {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.item {
+		@apply flex text-sm mb-3.5 cursor-pointer hover:text-white;
+		width: fit-content;
+		color: #f2f2f3;
+
+		p {
+			line-height: 16.41px;
+		}
+		.fa-icon {
+			@apply w-2.5 h-2.5 mr-2 mt-0.5;
+			fill: #c9c9c9 !important;
+		}
+	}
+
+	&:not(.sidebar-item-active) {
+		&:hover {
+			// @apply bg-primary text-primary bg-opacity-5;
+		}
+	}
+	&.sidebar-item-active {
+		@apply transition-all text-white;
+		transition-duration: 0.3s;
+		.header {
+			.title {
+				@apply text-white;
+			}
+			.fa-icon {
+				fill: white;
+			}
+
+			.icon {
+				svg {
+					path {
+						fill: white;
+					}
+				}
+			}
+		}
+
+		.item.active {
+			@apply text-white font-semibold;
+
+			.fa-icon {
+				fill: #ae4b69 !important;
+			}
+		}
+	}
+}
+
+.dashboard-sidebar-open {
+	.sidebar-item-layout {
+		.title {
+			@apply translate-x-0 opacity-100;
+		}
+
+		.icon {
+			@apply ml-0;
+		}
+	}
+}

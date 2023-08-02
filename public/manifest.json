@@ -1,0 +1,9 @@
+{
+	"short_name": "HIVE Lab",
+	"name": "HIVE Lab Project",
+	"icons": [],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#63082E",
+	"background_color": "#ffffff"
+}

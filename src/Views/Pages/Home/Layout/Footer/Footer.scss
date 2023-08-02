@@ -1,0 +1,63 @@
+.footer-layout {
+	@apply w-full h-full relative;
+	// background-color: #fbede2;
+	// padding-bottom: 7%;
+	// background-size: cover;
+
+	&::before {
+		content: '';
+		@apply absolute w-full h-full overflow-hidden;
+		background-image: url(../../../../../Assets/Images/home/footer-back.svg);
+		background-position: top right;
+		background-repeat: no-repeat;
+		opacity: 0.02;
+	}
+
+	.footer-grid {
+		max-width: 1600px;
+		@apply mx-auto pt-12 pb-0 text-black w-full;
+		padding: 3% 8% 7%;
+
+		h3 {
+			@apply text-xl font-bold mb-2;
+			color: #1f0863;
+		}
+		p {
+			@apply text-sm text-tertiary font-normal mb-6;
+			width: 32ch;
+		}
+		h5,
+		a {
+			@apply block text-sm text-tertiary font-normal mb-4 cursor-pointer transition-all;
+			&:hover {
+				@apply text-primary;
+			}
+			width: fit-content;
+		}
+
+		.logos {
+			@apply flex items-center relative;
+
+			img {
+				max-height: 40px;
+			}
+
+			.separator {
+				@apply  w-2 flex-center;
+
+
+				stroke: $primary;
+			}
+		}
+	}
+
+	.footer {
+		@apply text-sm font-normal text-black z-10 flex-center absolute bottom-0 w-full;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		@include down(sm) {
+			@apply text-xs;
+		}
+		background-color: #f0f1f3;
+	}
+}

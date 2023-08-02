@@ -1,0 +1,16 @@
+.dashboard-layout {
+	@apply flex h-screen w-full relative;
+	background: #f1f1f1;
+
+	.dashboard-content {
+		@apply flex-1 w-full h-screen relative;
+		// max-width: 86%;
+		background-color: #fbfbfb;
+		background-image: url(../../../Assets/Images/dashboard/Frame.svg);
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+}
+
+.dashboard-sidebar-open {
+}

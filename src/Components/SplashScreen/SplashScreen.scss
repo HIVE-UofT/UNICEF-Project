@@ -1,0 +1,33 @@
+.splash-screen-layout {
+	@apply transition-all bg-primary z-50
+    fixed inset-0 flex-center animate-fade-in;
+
+	transform: translateY(-100%);
+	animation: slide-up 1.2s ease 1;
+
+	.center-box {
+		@apply flex-center flex-col font-thin  text-white;
+		.logo {
+			@apply animate-ping bg-primary;
+			animation-iteration-count: 1 !important;
+			width: 200px;
+		}
+		.title {
+			font-size: 18px;
+		}
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-100%);
+		// opacity: 0;
+	}
+}
