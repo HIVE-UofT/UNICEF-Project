@@ -9,8 +9,11 @@ const Instructor = () => {
 	return (
 		<div className='instructor-layout'>
 			<Grid>
-				<Row className='flex items-end'>
+
+				<Row className=''>
+					<h2 className='mb-1' >{instructor.title}</h2>
 					<Col className='flex items-start' md={14}>
+
 						{instructor.people.map((item, i) => {
 								return (
 									<Col  md={9}>
@@ -18,7 +21,6 @@ const Instructor = () => {
 											<img src={item.image} alt='instructor' />
 										</div>
 										<div className='instructor-info'>
-
 											<h3>{item.name}</h3>
 											<p>{item.description}</p>
 										</div>
@@ -28,14 +30,14 @@ const Instructor = () => {
 					</Col>
 					<Col md={10}>
 						<Col className='logos' >
-							<img className='mr-4' src={instructor.logos[0]} alt='' />
+							<img className='mr-3' src={instructor.logos[0]} alt='' />
 							<img src={separator} />
-							<img className='ml-4' src={instructor.logos[1]} alt='' />
+							<img className='ml-3' src={instructor.logos[1]} alt='' />
 						</Col>
 						<Col className='logos' >
-							<img className='mr-4' src={UNICEF} alt='' />
+							<img className='mr-3' src={UNICEF} alt='' />
 							<img src={separator} />
-							<img className='ml-4' src={DSI} alt='' />
+							<img className='ml-3' src={DSI} alt='' />
 						</Col>
 					</Col>
 
