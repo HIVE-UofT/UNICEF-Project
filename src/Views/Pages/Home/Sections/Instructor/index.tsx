@@ -12,7 +12,7 @@ const Instructor = () => {
 
 				<Row className=''>
 					<h2 className='mb-1' >{instructor.title}</h2>
-					<Col className='flex items-start' md={14}>
+					<Col style={{marginLeft: '2vw'}} className='flex items-start' md={17}>
 
 						{instructor.people.map((item, i) => {
 								return (
@@ -28,7 +28,7 @@ const Instructor = () => {
 								);
 						})}
 					</Col>
-					<Col md={10}>
+					<Col md={6}>
 						<Col className='logos' >
 							<img className='mr-3' src={instructor.logos[0]} alt='' />
 							<img src={separator} />
