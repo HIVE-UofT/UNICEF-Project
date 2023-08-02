@@ -13,7 +13,7 @@ module.exports = {
 		},
 		{
 			plugin: sassResourcesLoader,
-			options: { resources: ['/Users/aryan/WebstormProjects/hivelab/UNICEF-Project/src/Assets/scss/base/export.scss'] },
+			options: { resources: ['./src/Assets/scss/base/export.scss'] },
 		},
 	],
 
