@@ -13,7 +13,7 @@ const Instructor = () => {
 					<Col className='flex items-start' md={14}>
 						{instructor.people.map((item, i) => {
 								return (
-									<Col className='items-start' >
+									<Col  md={9}>
 										<div className='instructor-image'>
 											<img src={item.image} alt='instructor' />
 										</div>
@@ -24,9 +24,7 @@ const Instructor = () => {
 										</div>
 									</Col>
 								);
-
 						})}
-
 					</Col>
 					<Col md={10}>
 						<Col className='logos' >
