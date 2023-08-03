@@ -16,7 +16,7 @@ const Chart = () => {
 							keyboard
 							loop={true}
 							autoplay={{
-								delay: 200000,
+								delay: 2000,
 								waitForTransition: true,
 								pauseOnMouseEnter: true,
 								disableOnInteraction: false,
@@ -26,7 +26,7 @@ const Chart = () => {
 							{...registerSwiper}
 							data-aos='flip-left'
 							className='chart-swiper'
-							data-aos-duration='100000'>
+							data-aos-duration='1000'>
 							{our_chart.map((item, i) => {
 								if (item.frameInNewRow) {
 									return (
