@@ -1,0 +1,85 @@
+.contact-us {
+	@apply w-full h-full;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background-color: #f7f7f8;
+	background-image: url(../../../../../Assets/Images/home/contact-back11.svg),
+		url(../../../../../Assets/Images/home/contact-back12.svg), url(../../../../../Assets/Images/home/contact-back21.svg),
+		url(../../../../../Assets/Images/home/contact-back22.svg);
+	background-repeat: no-repeat;
+	background-position: left 260px, left 282px, right 82px, right 60px;
+	background-size: auto;
+
+	.contact-content {
+		@apply m-auto;
+		width: 50ch;
+		.header {
+			@apply text-center mb-12;
+			p {
+				@apply text-tertiary text-left font-normal text-base whitespace-pre-line;
+				width: fit-content;
+			}
+		}
+		.contact-form {
+			.labeled-wrapper {
+				@apply relative flex flex-col;
+				border-radius: 10px;
+				background-color: #f2f2f2;
+				.label {
+					@apply ml-0 pl-0 mb-2 text-black text-sm -top-6;
+					transition: all 0.3s;
+				}
+
+				input {
+					@apply p-4 text-sm;
+					background-color: #f2f2f2;
+					border-radius: 10px;
+
+					&::placeholder {
+						-webkit-text-fill-color: #8e8e8e;
+					}
+				}
+				.labeled-wrapper-outline {
+					@apply border-none;
+				}
+			}
+			.selector,
+			.input-selector {
+				margin-bottom: 10%;
+
+				.rs-picker {
+					@apply pl-0;
+				}
+
+				.rs-picker-toggle-value {
+					@apply text-sm text-black;
+				}
+			}
+			.editable-input {
+				@apply w-full transition-all;
+				margin-bottom: 11%;
+			}
+			.dirty-input {
+				.label {
+					@apply text-tertiary;
+				}
+				input {
+					@apply text-black;
+				}
+			}
+
+			.fa-btn {
+				@apply flex-center text-white text-base font-medium w-full py-3 rounded-none;
+				background-color: #c9c9c9;
+				clip-path: polygon(4% 0%, 100% 0, 100% 70%, 96% 100%, 0 100%, 0% 30%);
+
+				&.ready-to-submit {
+					background-color: #533163;
+					&:hover {
+						background-color: #41254d;
+					}
+				}
+			}
+		}
+	}
+}
