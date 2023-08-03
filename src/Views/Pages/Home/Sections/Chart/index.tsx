@@ -9,14 +9,14 @@ const Chart = () => {
 	return (
 		<div className='home-chart'>
 			<Grid className='h-full w-full'>
-				<Row className='h-full w-full'>
+				<Row className='w-full'>
 						<Swiper
 							// cssMode={true}
 							// navigation={true}
 							keyboard
 							loop={true}
 							autoplay={{
-								delay: 2000,
+								delay: 200000,
 								waitForTransition: true,
 								pauseOnMouseEnter: true,
 								disableOnInteraction: false,
@@ -26,7 +26,7 @@ const Chart = () => {
 							{...registerSwiper}
 							data-aos='flip-left'
 							className='chart-swiper'
-							data-aos-duration='1000'>
+							data-aos-duration='100000'>
 							{our_chart.map((item, i) => {
 								if (item.frameInNewRow) {
 									return (
@@ -39,7 +39,7 @@ const Chart = () => {
 
 											<Row className='h-full' >
 												<iframe id="serviceFrameSend"
-														style={{height: '600px', width:'100%'}}	src={item.iFrameLink}
+														style={{height: '800px', width:'100%'}}	src={item.iFrameLink}
 														frameBorder="0"></iframe>
 
 											</Row>
@@ -56,7 +56,7 @@ const Chart = () => {
 
 										<Col className='h-full' md={14}>
 											<iframe id="serviceFrameSend"
-													style={{height: '600px', width:'100%'}}	src={item.iFrameLink}
+													style={{height: '700px', width:'100%'}}	src={item.iFrameLink}
 													 frameBorder="0"></iframe>
 
 										</Col>

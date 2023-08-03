@@ -10,7 +10,7 @@ const Instructor = () => {
 		<div className='instructor-layout'>
 			<Grid>
 
-				<Row className=''>
+				<Row style={{paddingLeft: '5%'}} className=''>
 					<h2 className='mb-1' >{instructor.title}</h2>
 					<Col style={{marginLeft: '2vw'}} className='flex items-start' md={17}>
 

@@ -18,10 +18,10 @@ image_width = 600
 use_column_width = True
 page_bg_img = '''
 <style>
-
+body { height:800px }
 header{visibility: hidden;}
 .stAlert{ visibility: hidden; }
-.stApp {background: #f7f7f8}
+.stApp {background: #f7f7f8; height:800px}
 </style>
 '''
 hide_streamlit_style = """

@@ -1,5 +1,4 @@
 import './index.scss';
-import {instructor} from "@data/home.data";
 
 const MlModel = () => {
 
