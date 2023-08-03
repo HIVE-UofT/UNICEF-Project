@@ -20,7 +20,7 @@ page_bg_img = '''
 <style>
 
 header{visibility: hidden;}
-
+.stAlert{ visibility: hidden; }
 .stApp {background: #f7f7f8}
 </style>
 '''
@@ -70,43 +70,44 @@ selected_models = col1.multiselect("Select models", list(model_options.keys()))
 x_train, x_test, y_train, y_test = train_test_split(df_selected.drop('Target', axis=1), df_selected['Target'], test_size=0.2)
 col1_1, col1_2 = col1.columns(2)
 # Train and plot the learning curves for the selected models
+
 if col1.button("Train Models"):
+    with st.spinner():
+        for selected_model in selected_models:
+            classifier = model_options[selected_model]
 
-    for selected_model in selected_models:
-        classifier = model_options[selected_model]
+            # Compute the learning curve
+            train_sizes, train_scores, test_scores = learning_curve(classifier, x_train, y_train, cv=5)
 
-        # Compute the learning curve
-        train_sizes, train_scores, test_scores = learning_curve(classifier, x_train, y_train, cv=5)
+            # Calculate the mean accuracy across all cross-validation folds
+            accuracy = np.mean(test_scores, axis=1)
 
-        # Calculate the mean accuracy across all cross-validation folds
-        accuracy = np.mean(test_scores, axis=1)
+            # Plot the learning curve
+            plt.plot(train_sizes, accuracy, marker='o', label=selected_model)
 
-        # Plot the learning curve
-        plt.plot(train_sizes, accuracy, marker='o', label=selected_model)
-
-    plt.title('Learning Curves')
-    plt.xlabel('Training examples')
-    plt.ylabel('Accuracy')
-    plt.legend(loc='best')
-    plt.grid(True)
-    plt.savefig("ModelTraining.png", dpi=300, bbox_inches="tight")
-
-
-    # Display the learning curve plot
-    col1_1.pyplot(plt)
-    col1_1.write("Comparison for selected models and selected variables")
+        plt.title('Learning Curves')
+        plt.xlabel('Training examples')
+        plt.ylabel('Accuracy')
+        plt.legend(loc='best')
+        plt.grid(True)
+        plt.savefig("ModelTraining.png", dpi=300, bbox_inches="tight")
 
 
-    # Load the PNG image from file
-    # Please change the path to you own path
-    image_path = "./models/learning_curve_comparison_Portugal.png"
-    image = open(image_path, "rb")
-    image_bytes = image.read()
-
-    # Display the image in Streamlit
-    col1_2.image(image_bytes)
-    col1_2.write("Overall Comparison")
+        # Display the learning curve plot
+        col1_1.pyplot(plt)
+        col1_1.write("Comparison for selected models and selected variables")
 
 
+        # Load the PNG image from file
+        # Please change the path to you own path
+        image_path = "./models/learning_curve_comparison_Portugal.png"
+        image = open(image_path, "rb")
+        image_bytes = image.read()
+
+        # Display the image in Streamlit
+        col1_2.image(image_bytes)
+        col1_2.write("Overall Comparison")
+
+    st.success('success')
 
 
