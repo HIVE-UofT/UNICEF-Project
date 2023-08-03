@@ -95,7 +95,7 @@ if col1.button("Train Models"):
 
         # Display the learning curve plot
         col1_1.pyplot(plt)
-        col1_1.write("Comparison for selected models and selected variables")
+        col1_1.write("Comparison of selected models and selected variables")
 
 
         # Load the PNG image from file
