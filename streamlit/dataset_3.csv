@@ -1,0 +1,372 @@
+﻿Features,Category2
+Gender,Gender
+Age/ DateOfBirth,Age
+Attendance/Absence,Engagement
+CGPA/ Sum of all exams,Current Acedemic Performance
+Admission grade/ note,Application Performance
+financial status/ socioeconomic status/ income,Financial Condition
+School year/ year of enrollment,Learning Pogress
+Name /Masked identifier of School,School Related
+Grade 1st Period,Current Acedemic Performance
+Grade 2nd Period,Current Acedemic Performance
+academic program,Current Study Program
+Address (U/R/Semiurban/Unknown)/ Postcode,Mobility
+Mother's qualification,Parental Education
+Father's qualification,Parental Education
+Math Grade,Previous Acedemic Performance
+Grade 2nd Period,Current Acedemic Performance
+Math grade - current,Current Acedemic Performance
+Failures,Current Acedemic Performance
+school of program,Current Study Program
+Daytime/evening attendance,Current Study Program
+Lateness,Engagement
+Family income level,Financial Condition
+Scholarship/ financial aid holder,Financial Condition
+Full-time or not,Current Study Program
+Name/ ID,Personal Information
+Higher Secondary standardized Exam Grade (e.g. SAT),Previous Acedemic Performance
+Travel time/ distance,Mobility
+Age at enrollment,Age
+Course,Current Study Program
+Language test grade e.g. TOEFL,Current Acedemic Performance
+Educational special need,Disadvantage
+Previous qualification,Learning Pogress
+Race,Cultural Background
+Extra-curricular activities,Extra-curricular activities
+Mother's occupation,Parental Occupation
+Father's occupation,Parental Occupation
+International,Cultural Background
+Marital status,Family Related
+Nationality,Cultural Background
+citizenship,Cultural Background
+GPA/ Final in last basic school,Previous Acedemic Performance
+Critical Reading Grade,Previous Acedemic Performance
+Type of Last Basic School,Previous School
+Personality type/ test,Psychological Factor
+Suspension,Retention Record
+having a personal tutor,School Related
+Career development,Career Development
+having a job/ part-time,Career Development
+Cohert,Learning Pogress
+Course level,Current Study Program
+# Course,Current Study Program
+exam grade,Current Acedemic Performance
+project grade,Current Acedemic Performance
+assignment,Current Acedemic Performance
+GPA average of subjects taken in the current undergraduate program,Current Acedemic Performance
+Science CGPA,Current Acedemic Performance
+Level of English,Current Acedemic Performance
+Acedemic Standing Holder,Current Acedemic Performance
+Type of scholarship,Current Acedemic Performance
+Extra School Support/ SwD student,Disadvantage
+Nursery,Early Development
+Early leave,Engagement
+active engagement during the lecture andlab works,Engagement
+Ethnicity,Cultural Background
+Voluntary activity,Extra-curricular activities
+Free time after school,Extra-curricular activities
+Birth order: The individual birth order among all living siblings,Family Related
+Parents cohabitation status,Family Related
+Guardian,Family Related
+Percentage of acedemic loan,Financial Condition
+Number of Credits attained,Learning Pogress
+misbehaviour and having an administrative sanction,Misbehavior
+Generation status,Mobility
+School Mobility/ Transferred student,Mobility
+Going out with friends,Peer Relationship
+Physical disability,Physical Health
+Secondary standardized Exam Grade (e.g. PSAT),Previous Acedemic Performance
+Last Basic School Name,Previous School
+Last Basic School Location (U/R),Previous School
+expectations questionnaire,Study Attitude
+# Class Repeated/ Course Retake,Retention Record
+# lost/drop courses,Retention Record
+Year/ Grade Repetition,Retention Record
+Unexpected entries or withdrawals,Retention Record
+Previous Dropout,Retention Record
+Retain record,Retention Record
+Probability of success,Study Attitude
+Size of the classroom,School Related
+School Type,School Related
+total sports,Physical Health
+level of teacher concern for the welfare of each student,School Related
+addiction,Misbehavior
+Judge from friends,Advice Received
+Judge from parents,Advice Received
+Usefulness of information received,Advice Received
+received advice on life and work plans,Advice Received
+year,Age
+Workday Alcohol Comsumption,Misbehavior
+Workday Alcohol Comsumption,Misbehavior
+Regular Consumption of alcohol,Misbehavior
+Application mode,Application Performance
+Application order,Application Performance
+Admission test online or not,Application Performance
+Student's profile score,Application Performance
+University of applied sciences entrance qualification,Application Performance
+General university entrance qualification,Application Performance
+Restricted university entrance qualification,Application Performance
+Foreign university entrance qualification,Application Performance
+Work hours besides study,Career Development
+work time_ semester,Career Development
+work time_ break,Career Development
+Work on related subject to graduation,Career Development
+Vocational training,Career Development
+Starting Term,Learning Pogress
+End date,Learning Pogress
+The period in years that the student takes to return to study,Learning Pogress
+Course Classroom,Current Study Program
+Course Instructor,Current Study Program
+Number of time for course dropout,Retention Record
+Course Hours,Current Study Program
+Course Schedule Time,Current Study Program
+Class duration,Current Study Program
+too heavy demand of homework,Current Study Program
+Average number of subjects taken per semester,Current Study Program
+Total registered hours,Current Study Program
+Registered hours - last semster,Current Study Program
+Current Registered hour - current semester,Current Study Program
+Number of times of second enrollment in a subject after failing the first time,Retention Record
+Number of times of third enrollment in a subject after failing the second time,Retention Record
+Course College,Current Study Program
+Course Department,Current Study Program
+tests,Current Acedemic Performance
+Tests grades,Current Acedemic Performance
+project,Current Acedemic Performance
+Curricular units 1st sem,Current Acedemic Performance
+Curricular units 2nd sem,Current Acedemic Performance
+Grade 3rd Period,Current Acedemic Performance
+GPA Last Semester,Current Acedemic Performance
+Final Grade,Current Acedemic Performance
+Rank Major/ institution Rank,Current Acedemic Performance
+Grade for prevocational subject,Current Acedemic Performance
+GPA - prevocational,Current Acedemic Performance
+GPA - vocational education,Current Acedemic Performance
+"GPA average of subjects with number of credits greaterthan zero, penalized for the number of timesthe subjects are taken by the student",Current Acedemic Performance
+Other subjects grade in high school,Current Acedemic Performance
+Social Science CGPA,Current Acedemic Performance
+English GPA,Current Acedemic Performance
+Foreign Language,Current Acedemic Performance
+Foreign Language Level,Current Acedemic Performance
+Foreign Language consortium,Current Acedemic Performance
+Reading grade - current,Current Acedemic Performance
+class ranking,Current Acedemic Performance
+MAP-R National Percentile Ranks,Current Acedemic Performance
+normalized ranking on language,Current Acedemic Performance
+normalized ranking on Math,Current Acedemic Performance
+normalized ranking on English,Current Acedemic Performance
+Competition achievement,Current Acedemic Performance
+APS calculating method,Current Acedemic Performance
+ELL status,Current Acedemic Performance
+Ratio of the approved subjects taken by the student,Current Acedemic Performance
+Ratio of the failed subjects taken by the student,Current Acedemic Performance
+Ratio of the canceled subjects taken by the student,Current Acedemic Performance
+regular courses efficiency,Current Acedemic Performance
+Complementary courses efficiency,Current Acedemic Performance
+ESOL efficiency,Current Acedemic Performance
+"number of alerted subjects,",Current Acedemic Performance
+Exam Repeated,Current Acedemic Performance
+Highest course grade,Current Acedemic Performance
+Scholarship percentage,Current Acedemic Performance
+Faculty indicator,Current Study Program
+Dropout probability of the study program,Current Study Program
+Disadvantage,Disadvantage
+Educational level,Learning Pogress
+Degree,Learning Pogress
+Highest attained education level,Learning Pogress
+Resources for studying,School Related
+Study restriction,School Related
+Number of P.H.D. holder in university?,School Related
+Industry collaboration in university,School Related
+Special encouragement program for good results,School Related
+Treatment program for dropout prevention,School Related
+Attended the Matching Day,Engagement
+Class Absence,Engagement
+unauthorized absence in the first four weeks,Engagement
+unauthorized early leave in first four weeks,Engagement
+unauthorized class absence in first four weeks,Engagement
+unauthorized lateness in first four weeks,Engagement
+Number of discollegiate subjects for poor attendance,Engagement
+Taking notes in class,Engagement
+Level of boredom during classes,Engagement
+Extra Family Support,Study Habits
+Extra paid class,Study Habits
+Hour of Tuition service to other,Extra-curricular activities
+Self-regulated activities,Extra-curricular activities
+integral wellness activities,Extra-curricular activities
+Culture Diffusion Activities,Extra-curricular activities
+Club activities,Extra-curricular activities
+Student Society Activities,Extra-curricular activities
+Connected with student politics,Extra-curricular activities
+Artistic or Cultural activities,Extra-curricular activities
+Leadership and Student Education activities,Extra-curricular activities
+Student Society and Leadership program,Extra-curricular activities
+favorite sport activity,Extra-curricular activities
+Club based extra curriculum activities,Extra-curricular activities
+First generation for a professional career,Parental Occupation
+Father work status,Parental Occupation
+Mother work status,Parental Occupation
+Quality of family relationship,Family Related
+First born son financial commitment to his family,Financial Condition
+Family size,Family Related
+Living with,Family Related
+Siblings (The number of individual living brothers/sisters),Family Related
+whether parents were students in the area in charge,Family Related
+Displaced,Family Related
+Debtor,Financial Condition
+Sponsorship,Financial Condition
+Tuition fees up to date,Financial Condition
+Difficulties to pay tuition,Financial Condition
+Difficulties to earn money,Financial Condition
+Total school financial support percent,Financial Condition
+funding,Financial Condition
+Last graduation year,Application Performance
+Student's number of child,Family Related
+Immigration,Cultural Background
+First Generation Immigrant,Cultural Background
+Second generation immigrant,Cultural Background
+Level of difficulty of the subjects,Learning Pogress
+completion of current degree,Learning Pogress
+Total hour earned,Learning Pogress
+Hour earned - last semester,Learning Pogress
+Total transferred hours,Mobility
+Study points,Learning Pogress
+Matura points,Learning Pogress
+Base points,Learning Pogress
+Number of days between registration and start educational program,Learning Pogress
+commit_identificat,Learning Pogress
+commit_demands,Learning Pogress
+commit_necessary,Learning Pogress
+bullying,Misbehavior
+number of years living in a city,Mobility
+Shifts,Mobility
+change_field,Mobility
+change_uni,Mobility
+change_degree,Mobility
+new to the school district,Mobility
+City of entrance qualification,Mobility
+Online or not,Current Study Program
+e-learning activities,Learning Pogress
+Access,Learning Pogress
+Parents illiteracy,Parental Education
+Highest educational level obtained by the student parents.,Parental Education
+Group Study,Peer Relationship
+Number of friends,Peer Relationship
+Time spent with friends,Peer Relationship
+Birth Place,Mobility
+City,Mobility
+Street,Mobility
+Health Status,Physical Health
+Chronic diseases,Physical Health
+Height,Physical Health
+Weight,Physical Health
+Waist,Physical Health
+Measure of flexibility,Physical Health
+abdominal exercises in a minute,Physical Health
+push-ups in a minute,Physical Health
+time in 50-m race,Physical Health
+time in 1000-m race,Physical Health
+National Percentile Rank,Previous Acedemic Performance
+GRE,Previous Acedemic Performance
+ACT,Previous Acedemic Performance
+General Aptitude Test Verbal Score,Previous Acedemic Performance
+General Aptitude Test Quantitative Score,Previous Acedemic Performance
+General Aptitude Test Total Score,Previous Acedemic Performance
+Contact Hour per week of maths,Previous Acedemic Performance
+Previous level score (average),Previous Acedemic Performance
+Last basic school dependency,Previous School
+Last basic school district,Previous School
+Language Skills before enrollment,Previous Acedemic Performance
+Maths Skills before enrollement,Previous Acedemic Performance
+preparation - methodology,Previous Acedemic Performance
+preparation - knowledge of subjects,Previous Acedemic Performance
+College Readiness,Previous Acedemic Performance
+Perspective on his/ her integration into the labor market,Psychological Factor
+helplessness,Psychological Factor
+Religion,Cultural Background
+Re-enroll,Retention Record
+Gap Year,Retention Record
+Previous Gap/Fail,Retention Record
+Punishment,Retention Record
+Romantic relationship,Peer Relationship
+Adaption to school,Study Attitude
+Interest in subjects,Study Attitude
+Motivation level,Study Attitude
+encouragement for study,Study Attitude
+Expectations about study success,Study Attitude
+Reason to choose the school,Study Attitude
+Field of choice,Study Attitude
+external influence in choice of degree,Study Attitude
+Institute of choice,Study Attitude
+Higher education plan,Study Attitude
+socint_instructors,Study Attitude
+socint_students,Study Attitude
+Feeling to the study,Study Attitude
+satisf_enjoy,Study Attitude
+satisf_conditions,Study Attitude
+satisf_match,Study Attitude
+satisf_whole,Study Attitude
+satisf_frustrating,Study Attitude
+satisf_kill,Study Attitude
+satisf_interesting,Study Attitude
+satisf_concerns,Study Attitude
+satisf_tired,Study Attitude
+performances satisfaction,Study Attitude
+selfconcept,Study Attitude
+study_informed,Study Attitude
+commit_enjoy,Study Attitude
+lack of sanitation,School Related
+availability of clean drinking water at school,School Related
+Classroom,School Related
+quality of school infrastructure,School Related
+Region of school,School Related
+Whether belongs to the region in charge,School Related
+tuition cost level,School Related
+Ragging in campus,School Related
+# semesters completed,Learning Pogress
+# semesters enrolled,Learning Pogress
+pregnancy,Misbehavior
+sexism,Misbehavior
+Regular Smoking,Misbehavior
+state_legislative_assembly,Social Factor
+parliament,Social Factor
+Unemployment rate,Social Factor
+level of social backwardness at the level of urban areas of the student address,Social Factor
+Inflation rate,Social Factor
+GDP,Social Factor
+Any law breading during Student life,Social Factor
+Daily time spent at social media,Misbehavior
+sports efficiency,Physical Health
+physical education or not,Physical Health
+sport attendance quadratic error,Physical Health
+Place for study,Study Habits
+Study habits,Study Habits
+Pro-active study behavior,Study Habits
+Study Type,Study Habits
+Way to resolve doubt,Study Habits
+Study Method,Study Habits
+Daily regular study time,Study Habits
+Weekly regular study time,Study Habits
+Study time_ semester,Study Habits
+Study time_break,Study Habits
+educational.model,School Related
+Equal Treatment,School Related
+methods of teaching,School Related
+Transport method to school,Mobility
+polls,Social Factor
+Unisex Co-educational,School Related
+Internet access at home,Family Related
+Limited knowledge in software usage,Study Habits
+Term tests grade,Current Acedemic Performance
+Surprise tests grade,Current Acedemic Performance
+Additional lecture and lab work hours,Engagement
+Total number of hours a student spent on StudentInformation System (SIS),Engagement
+"Payment type (family resources, scholarships, or institutional agreements)",Financial Condition
+Have Family in School Region,Family Related
+Admission Option,Application Performance
+School Holder,School Related
+Admission Reason,Application Performance
+Type of Dwelling,Mobility
+House Owned,Family Related
+House Materials,Family Related
+Administrative school data,School Related
