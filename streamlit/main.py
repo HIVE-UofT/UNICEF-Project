@@ -18,10 +18,10 @@ image_width = 600
 use_column_width = True
 page_bg_img = '''
 <style>
-
+body { height:800px }
 header{visibility: hidden;}
 .stAlert{ visibility: hidden; }
-.stApp {background: #f7f7f8}
+.stApp {background: #f7f7f8; height:800px}
 </style>
 '''
 hide_streamlit_style = """
@@ -46,8 +46,15 @@ Educationlst = list(df_features[df_features.Education_level.notnull()].Education
 container = st.container()
 col1, col2 = container.columns(2)
 
-df = pd.read_csv("./models/datasets/Portugal_Undergrad_dataset.csv")  # read a CSV file inside the 'data" folder next to 'app.py'# add a title
-col2.write(df)
+# df = pd.read_csv("./models/datasets/Portugal_Undergrad_dataset.csv")  # read a CSV file inside the 'data" folder next to 'app.py'# add a title
+# col2.write(df)
+image_path = "./models/learning_curve_comparison_Portugal.png"
+image = open(image_path, "rb")
+image_bytes = image.read()
+
+# Display the image in Streamlit
+col2.image(image_bytes)
+col2.write("Overall Comparison")
 
 selected_variables = col1.multiselect("Select Variables for Training", df_ptg.columns, default=[])
 selected_variables.append("Target")
@@ -68,7 +75,7 @@ selected_models = col1.multiselect("Select models", list(model_options.keys()))
 
 # Split the data into train and test sets
 x_train, x_test, y_train, y_test = train_test_split(df_selected.drop('Target', axis=1), df_selected['Target'], test_size=0.2)
-col1_1, col1_2 = col1.columns(2)
+
 # Train and plot the learning curves for the selected models
 
 if col1.button("Train Models"):
@@ -94,19 +101,13 @@ if col1.button("Train Models"):
 
 
         # Display the learning curve plot
-        col1_1.pyplot(plt)
-        col1_1.write("Comparison of selected models and selected variables")
+        col1.pyplot(plt)
+        col1.write("Comparison of selected models and selected variables")
 
 
         # Load the PNG image from file
         # Please change the path to you own path
-        image_path = "./models/learning_curve_comparison_Portugal.png"
-        image = open(image_path, "rb")
-        image_bytes = image.read()
 
-        # Display the image in Streamlit
-        col1_2.image(image_bytes)
-        col1_2.write("Overall Comparison")
 
     st.success('success')
 
