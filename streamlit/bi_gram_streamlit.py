@@ -96,7 +96,7 @@ page_bg_img = '''
 
 header{visibility: hidden;}
 .stAlert{ visibility: hidden; }
-.stApp { background: url(http://localhost:3000/static/media/chart-back.4125ee2c.svg), no-repeat;}
+.stApp { background: url(http://178.128.236.200/static/media/chart-back.4125ee2c.svg), no-repeat;}
 </style>
 '''
 hide_streamlit_style = """
