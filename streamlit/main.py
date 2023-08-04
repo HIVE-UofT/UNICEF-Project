@@ -18,10 +18,10 @@ image_width = 600
 use_column_width = True
 page_bg_img = '''
 <style>
-body { height:800px }
+
 header{visibility: hidden;}
 .stAlert{ visibility: hidden; }
-.stApp {background: #f7f7f8; height:800px}
+.stApp {background: #f7f7f8;}
 </style>
 '''
 hide_streamlit_style = """
@@ -97,7 +97,7 @@ if col1.button("Train Models"):
         plt.ylabel('Accuracy')
         plt.legend(loc='best')
         plt.grid(True)
-        plt.savefig("ModelTraining.png", dpi=300, bbox_inches="tight")
+
 
 
         # Display the learning curve plot
