@@ -119,4 +119,4 @@ with st.spinner():
 
 # Display the graph using st.pyplot
     st.pyplot(graph)
-    st.success('success')
+st.success('success')
