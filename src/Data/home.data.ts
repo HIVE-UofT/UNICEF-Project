@@ -13,8 +13,8 @@ export const our_vision = {
     title: 'DECODING SCHOOL DROPOUT PREDICTION',
     sub_title: ' ',
     description:
-        'this project aims to use the Machine Learning technology to predict dropout rate based on various features, including but not limited to health information, \n' +
-        '    student demographic and school background, to help different organization to have a handy but reliable dropout systems and  platform.',
+        'The foremost feature utilized by the existing studies to predict school dropout is the current study status of students—a key indicator that cannot be ignored. However, it is crucial to acknowledge that there are other aspects that demand our attention as well.\n' +
+        '\n Our findings highlight a disheartening reality: health and behavioral features, which could significantly contribute to identifying at-risk students, have not received the attention they rightfully deserve. By overlooking these critical factors, we risk overlooking opportunities to intervene and provide much-needed support to students facing challenges that profoundly impact their educational journey.'
 };
 
 export const our_chart = [
