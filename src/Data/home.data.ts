@@ -49,13 +49,6 @@ export const our_chart = [
         iFrameLink: 'collapsibleTree_FreqCounts.html',
         frameInNewRow: true,
     }, {
-        section: 'Interactive Treemap',
-        title: '',
-        frameInNewRow: true,
-        description:
-            'The Treemap visualization showcases three hierarchical levels while displaying one level at a time. By clicking on a rectangle, you can delve deeper into lower-level categories, gaining a better understanding of their hierarchical relationships. The size of each rectangle corresponds to the frequency of its appearance in predictive models, enabling effortless comparisons of feature usage.',
-        iFrameLink: 'interactive_treemap.html',
-    }, {
         section: 'Treemap',
         title: '',
         frameInNewRow: true,
@@ -67,26 +60,30 @@ export const our_chart = [
 ];
 
 export const instructor = {
-    title: 'Collaborators',
+    title: 'Ziqi Shu',
+    name: 'Creator',
+        image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
+    description: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto, studying Cognitive Science and Computer Science. She is interested in applying computational models in studying human cognition and a wide range of topics in Computational Linguistics. In her spare time, Ziqi likes watching musicals, petting cats and sleeping.',
     people: [
-        {
-            name: 'Zahra Shakeri',
-            image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
-            description: 'Supervisor',
-        }, {
-            name: 'Ziqi Shu',
-            image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
-            description: 'Creator',
-        }
-        , {
-            name: 'Jiayu Liangm',
-            image: 'https://hivelab-uoft.ca/images/team/Grace.JPG',
-            description: 'Creator',
-        }, {
-            name: 'Yong Chen',
-            image: 'https://hivelab-uoft.ca/images/team/yong.png',
-            description: 'Creator',
-        }
+        // {
+        //     name: 'Zahra Shakeri',
+        //     image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
+        //     description: 'Supervisor',
+        // },
+        // {
+        //     name: 'Ziqi Shu',
+        //     image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
+        //     description: 'Creator',
+        // }
+        // , {
+        //     name: 'Jiayu Liangm',
+        //     image: 'https://hivelab-uoft.ca/images/team/Grace.JPG',
+        //     description: 'Creator',
+        // }, {
+        //     name: 'Yong Chen',
+        //     image: 'https://hivelab-uoft.ca/images/team/yong.png',
+        //     description: 'Creator',
+        // }
 
     ],
     logos: [toronto, dalla],

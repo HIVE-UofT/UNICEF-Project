@@ -3,16 +3,17 @@ import { Col, Grid, Row } from 'rsuite';
 import { our_chart } from '@src/Data/home.data';
 import { Swiper, SwiperSlide } from '@src/Components/Swiper/Swiper';
 import { useSwiper } from '../../../../../Components/Swiper/Swiper';
+import { useSwiper as useSwiper2} from 'swiper/react';
 import Iframe  from 'react-iframe'
 const Chart = () => {
 	const { registerSwiper } = useSwiper();
+	const swiper = useSwiper2();
 	return (
 		<div className='home-chart'>
 			<Grid className='h-full w-full'>
 				<Row className='w-full'>
 						<Swiper
 							// cssMode={true}
-							// navigation={true}
 							keyboard
 							loop={true}
 							autoplay={{

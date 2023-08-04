@@ -74,7 +74,7 @@
 				clip-path: polygon(4% 0%, 100% 0, 100% 70%, 96% 100%, 0 100%, 0% 30%);
 
 				&.ready-to-submit {
-					background-color: #533163;
+					background-color: $primary;
 					&:hover {
 						background-color: #41254d;
 					}

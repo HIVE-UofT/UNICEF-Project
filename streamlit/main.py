@@ -53,8 +53,9 @@ image = open(image_path, "rb")
 image_bytes = image.read()
 
 # Display the image in Streamlit
-col2.image(image_bytes)
-col2.write("Overall Comparison")
+placaHolder = col2.image(image_bytes)
+col2.write("")
+
 
 selected_variables = col1.multiselect("Select Variables for Training", df_ptg.columns, default=[])
 selected_variables.append("Target")
@@ -77,7 +78,7 @@ selected_models = col1.multiselect("Select models", list(model_options.keys()))
 x_train, x_test, y_train, y_test = train_test_split(df_selected.drop('Target', axis=1), df_selected['Target'], test_size=0.2)
 
 # Train and plot the learning curves for the selected models
-
+results_col1,results_col2 = container.columns(2)
 if col1.button("Train Models"):
     with st.spinner():
         for selected_model in selected_models:
@@ -101,8 +102,9 @@ if col1.button("Train Models"):
 
 
         # Display the learning curve plot
-        col1.pyplot(plt)
-        col1.write("Comparison of selected models and selected variables")
+        results_col1.pyplot(plt)
+        placaHolder.empty()
+        results_col2.image(image_bytes)
 
 
         # Load the PNG image from file

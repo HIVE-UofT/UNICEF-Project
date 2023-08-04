@@ -95,7 +95,7 @@ $sidebar-close-width: 80px;
 			@apply flex-center select-none cursor-pointer text-white
             transition-all rounded-full mb-6 mt-2;
 			background-color: #ae4b69;
-			margin-left: ($sidebar-close-width - 30px)/2;
+			margin-left: calc(($sidebar-close-width - 30px) / 2);
 			width: 30px;
 			height: 30px;
 			.fa-icon {

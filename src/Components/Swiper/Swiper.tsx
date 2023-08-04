@@ -25,6 +25,9 @@ export const useSwiper = () => {
 
 	const registerSwiper: SwiperProps = {
 		keyboard: true,
+		navigation : true,
+
+
 		onInit: sw => setSwiper(sw),
 		mousewheel: { thresholdDelta: 5, forceToAxis: true },
 		onSwiper: sw => setIndex({ cur: sw.activeIndex, pre: sw?.previousIndex }),

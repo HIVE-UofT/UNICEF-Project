@@ -20,7 +20,7 @@
 
 		h3 {
 			@apply text-xl font-bold mb-2;
-			color: #1f0863;
+			color: $primary;
 		}
 		p {
 			@apply text-sm text-tertiary font-normal mb-6;

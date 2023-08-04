@@ -37,7 +37,7 @@
 					@apply text-primary border-primary font-semibold flex-col flex-center;
 
 					&::after {
-						content: url(../../../../../Assets/icons/active-point.svg);
+
 						@apply absolute bottom-1 flex-center animate-fade-in;
 						animation-duration: 0.5s;
 					}

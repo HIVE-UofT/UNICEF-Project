@@ -2,21 +2,21 @@
 Gender,Gender
 Age/ DateOfBirth,Age
 Attendance/Absence,Engagement
-CGPA/ Sum of all exams,Current Acedemic Performance
-Admission grade/ note,Application Performance
+CGPA/ Sum of all exams,Current Study Success
+Admission grade/ note,Admission Performance
 financial status/ socioeconomic status/ income,Financial Condition
 School year/ year of enrollment,Learning Pogress
 Name /Masked identifier of School,School Related
-Grade 1st Period,Current Acedemic Performance
-Grade 2nd Period,Current Acedemic Performance
+Grade 1st Period,Current Study Success
+Grade 2nd Period,Current Study Success
 academic program,Current Study Program
 Address (U/R/Semiurban/Unknown)/ Postcode,Mobility
 Mother's qualification,Parental Education
 Father's qualification,Parental Education
-Math Grade,Previous Acedemic Performance
-Grade 2nd Period,Current Acedemic Performance
-Math grade - current,Current Acedemic Performance
-Failures,Current Acedemic Performance
+Math Grade,Prev Study Success
+Grade 2nd Period,Current Study Success
+Math grade - current,Current Study Success
+Failures,Current Study Success
 school of program,Current Study Program
 Daytime/evening attendance,Current Study Program
 Lateness,Engagement
@@ -24,11 +24,11 @@ Family income level,Financial Condition
 Scholarship/ financial aid holder,Financial Condition
 Full-time or not,Current Study Program
 Name/ ID,Personal Information
-Higher Secondary standardized Exam Grade (e.g. SAT),Previous Acedemic Performance
+Higher Secondary standardized Exam Grade (e.g. SAT),Prev Study Success
 Travel time/ distance,Mobility
 Age at enrollment,Age
 Course,Current Study Program
-Language test grade e.g. TOEFL,Current Acedemic Performance
+Language test grade e.g. TOEFL,Current Study Success
 Educational special need,Disadvantage
 Previous qualification,Learning Pogress
 Race,Cultural Background
@@ -39,8 +39,8 @@ International,Cultural Background
 Marital status,Family Related
 Nationality,Cultural Background
 citizenship,Cultural Background
-GPA/ Final in last basic school,Previous Acedemic Performance
-Critical Reading Grade,Previous Acedemic Performance
+GPA/ Final in last basic school,Prev Study Success
+Critical Reading Grade,Prev Study Success
 Type of Last Basic School,Previous School
 Personality type/ test,Psychological Factor
 Suspension,Retention Record
@@ -50,14 +50,14 @@ having a job/ part-time,Career Development
 Cohert,Learning Pogress
 Course level,Current Study Program
 # Course,Current Study Program
-exam grade,Current Acedemic Performance
-project grade,Current Acedemic Performance
-assignment,Current Acedemic Performance
-GPA average of subjects taken in the current undergraduate program,Current Acedemic Performance
-Science CGPA,Current Acedemic Performance
-Level of English,Current Acedemic Performance
-Acedemic Standing Holder,Current Acedemic Performance
-Type of scholarship,Current Acedemic Performance
+exam grade,Current Study Success
+project grade,Current Study Success
+assignment,Current Study Success
+GPA average of subjects taken in the current undergraduate program,Current Study Success
+Science CGPA,Current Study Success
+Level of English,Current Study Success
+Acedemic Standing Holder,Current Study Success
+Type of scholarship,Current Study Success
 Extra School Support/ SwD student,Disadvantage
 Nursery,Early Development
 Early leave,Engagement
@@ -75,7 +75,7 @@ Generation status,Mobility
 School Mobility/ Transferred student,Mobility
 Going out with friends,Peer Relationship
 Physical disability,Physical Health
-Secondary standardized Exam Grade (e.g. PSAT),Previous Acedemic Performance
+Secondary standardized Exam Grade (e.g. PSAT),Prev Study Success
 Last Basic School Name,Previous School
 Last Basic School Location (U/R),Previous School
 expectations questionnaire,Study Attitude
@@ -99,14 +99,14 @@ year,Age
 Workday Alcohol Comsumption,Misbehavior
 Workday Alcohol Comsumption,Misbehavior
 Regular Consumption of alcohol,Misbehavior
-Application mode,Application Performance
-Application order,Application Performance
-Admission test online or not,Application Performance
-Student's profile score,Application Performance
-University of applied sciences entrance qualification,Application Performance
-General university entrance qualification,Application Performance
-Restricted university entrance qualification,Application Performance
-Foreign university entrance qualification,Application Performance
+Application mode,Admission Performance
+Application order,Admission Performance
+Admission test online or not,Admission Performance
+Student's profile score,Admission Performance
+University of applied sciences entrance qualification,Admission Performance
+General university entrance qualification,Admission Performance
+Restricted university entrance qualification,Admission Performance
+Foreign university entrance qualification,Admission Performance
 Work hours besides study,Career Development
 work time_ semester,Career Development
 work time_ break,Career Development
@@ -130,44 +130,44 @@ Number of times of second enrollment in a subject after failing the first time,R
 Number of times of third enrollment in a subject after failing the second time,Retention Record
 Course College,Current Study Program
 Course Department,Current Study Program
-tests,Current Acedemic Performance
-Tests grades,Current Acedemic Performance
-project,Current Acedemic Performance
-Curricular units 1st sem,Current Acedemic Performance
-Curricular units 2nd sem,Current Acedemic Performance
-Grade 3rd Period,Current Acedemic Performance
-GPA Last Semester,Current Acedemic Performance
-Final Grade,Current Acedemic Performance
-Rank Major/ institution Rank,Current Acedemic Performance
-Grade for prevocational subject,Current Acedemic Performance
-GPA - prevocational,Current Acedemic Performance
-GPA - vocational education,Current Acedemic Performance
-"GPA average of subjects with number of credits greaterthan zero, penalized for the number of timesthe subjects are taken by the student",Current Acedemic Performance
-Other subjects grade in high school,Current Acedemic Performance
-Social Science CGPA,Current Acedemic Performance
-English GPA,Current Acedemic Performance
-Foreign Language,Current Acedemic Performance
-Foreign Language Level,Current Acedemic Performance
-Foreign Language consortium,Current Acedemic Performance
-Reading grade - current,Current Acedemic Performance
-class ranking,Current Acedemic Performance
-MAP-R National Percentile Ranks,Current Acedemic Performance
-normalized ranking on language,Current Acedemic Performance
-normalized ranking on Math,Current Acedemic Performance
-normalized ranking on English,Current Acedemic Performance
-Competition achievement,Current Acedemic Performance
-APS calculating method,Current Acedemic Performance
-ELL status,Current Acedemic Performance
-Ratio of the approved subjects taken by the student,Current Acedemic Performance
-Ratio of the failed subjects taken by the student,Current Acedemic Performance
-Ratio of the canceled subjects taken by the student,Current Acedemic Performance
-regular courses efficiency,Current Acedemic Performance
-Complementary courses efficiency,Current Acedemic Performance
-ESOL efficiency,Current Acedemic Performance
-"number of alerted subjects,",Current Acedemic Performance
-Exam Repeated,Current Acedemic Performance
-Highest course grade,Current Acedemic Performance
-Scholarship percentage,Current Acedemic Performance
+tests,Current Study Success
+Tests grades,Current Study Success
+project,Current Study Success
+Curricular units 1st sem,Current Study Success
+Curricular units 2nd sem,Current Study Success
+Grade 3rd Period,Current Study Success
+GPA Last Semester,Current Study Success
+Final Grade,Current Study Success
+Rank Major/ institution Rank,Current Study Success
+Grade for prevocational subject,Current Study Success
+GPA - prevocational,Current Study Success
+GPA - vocational education,Current Study Success
+"GPA average of subjects with number of credits greaterthan zero, penalized for the number of timesthe subjects are taken by the student",Current Study Success
+Other subjects grade in high school,Current Study Success
+Social Science CGPA,Current Study Success
+English GPA,Current Study Success
+Foreign Language,Current Study Success
+Foreign Language Level,Current Study Success
+Foreign Language consortium,Current Study Success
+Reading grade - current,Current Study Success
+class ranking,Current Study Success
+MAP-R National Percentile Ranks,Current Study Success
+normalized ranking on language,Current Study Success
+normalized ranking on Math,Current Study Success
+normalized ranking on English,Current Study Success
+Competition achievement,Current Study Success
+APS calculating method,Current Study Success
+ELL status,Current Study Success
+Ratio of the approved subjects taken by the student,Current Study Success
+Ratio of the failed subjects taken by the student,Current Study Success
+Ratio of the canceled subjects taken by the student,Current Study Success
+regular courses efficiency,Current Study Success
+Complementary courses efficiency,Current Study Success
+ESOL efficiency,Current Study Success
+"number of alerted subjects,",Current Study Success
+Exam Repeated,Current Study Success
+Highest course grade,Current Study Success
+Scholarship percentage,Current Study Success
 Faculty indicator,Current Study Program
 Dropout probability of the study program,Current Study Program
 Disadvantage,Disadvantage
@@ -220,7 +220,7 @@ Difficulties to pay tuition,Financial Condition
 Difficulties to earn money,Financial Condition
 Total school financial support percent,Financial Condition
 funding,Financial Condition
-Last graduation year,Application Performance
+Last graduation year,Admission Performance
 Student's number of child,Family Related
 Immigration,Cultural Background
 First Generation Immigrant,Cultural Background
@@ -266,21 +266,21 @@ abdominal exercises in a minute,Physical Health
 push-ups in a minute,Physical Health
 time in 50-m race,Physical Health
 time in 1000-m race,Physical Health
-National Percentile Rank,Previous Acedemic Performance
-GRE,Previous Acedemic Performance
-ACT,Previous Acedemic Performance
-General Aptitude Test Verbal Score,Previous Acedemic Performance
-General Aptitude Test Quantitative Score,Previous Acedemic Performance
-General Aptitude Test Total Score,Previous Acedemic Performance
-Contact Hour per week of maths,Previous Acedemic Performance
-Previous level score (average),Previous Acedemic Performance
+National Percentile Rank,Prev Study Success
+GRE,Prev Study Success
+ACT,Prev Study Success
+General Aptitude Test Verbal Score,Prev Study Success
+General Aptitude Test Quantitative Score,Prev Study Success
+General Aptitude Test Total Score,Prev Study Success
+Contact Hour per week of maths,Prev Study Success
+Previous level score (average),Prev Study Success
 Last basic school dependency,Previous School
 Last basic school district,Previous School
-Language Skills before enrollment,Previous Acedemic Performance
-Maths Skills before enrollement,Previous Acedemic Performance
-preparation - methodology,Previous Acedemic Performance
-preparation - knowledge of subjects,Previous Acedemic Performance
-College Readiness,Previous Acedemic Performance
+Language Skills before enrollment,Prev Study Success
+Maths Skills before enrollement,Prev Study Success
+preparation - methodology,Prev Study Success
+preparation - knowledge of subjects,Prev Study Success
+College Readiness,Prev Study Success
 Perspective on his/ her integration into the labor market,Psychological Factor
 helplessness,Psychological Factor
 Religion,Cultural Background
@@ -357,15 +357,15 @@ polls,Social Factor
 Unisex Co-educational,School Related
 Internet access at home,Family Related
 Limited knowledge in software usage,Study Habits
-Term tests grade,Current Acedemic Performance
-Surprise tests grade,Current Acedemic Performance
+Term tests grade,Current Study Success
+Surprise tests grade,Current Study Success
 Additional lecture and lab work hours,Engagement
 Total number of hours a student spent on StudentInformation System (SIS),Engagement
 "Payment type (family resources, scholarships, or institutional agreements)",Financial Condition
 Have Family in School Region,Family Related
-Admission Option,Application Performance
+Admission Option,Admission Performance
 School Holder,School Related
-Admission Reason,Application Performance
+Admission Reason,Admission Performance
 Type of Dwelling,Mobility
 House Owned,Family Related
 House Materials,Family Related
