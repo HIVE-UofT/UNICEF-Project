@@ -5,6 +5,7 @@ import Vision from './Sections/Vision/index';
 import ContactUs from './Sections/ContactUs/index';
 import Instructor from './Sections/Instructor/index';
 import MlModel from './Sections/MlModel/index';
+import Map from "@src/Views/Pages/Home/Sections/Map";
 
 
 const Home = () => {
@@ -13,9 +14,11 @@ const Home = () => {
 			<Vision />
 			<Chart />
 			<MlModel />
+			<Map />
 			<Instructor />
+
 			<AboutUs />
-			<ContactUs />
+			{/*<ContactUs />*/}
 		</div>
 	);
 };

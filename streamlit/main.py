@@ -53,8 +53,9 @@ image = open(image_path, "rb")
 image_bytes = image.read()
 
 # Display the image in Streamlit
-placaHolder = col2.image(image_bytes)
 col2.write("")
+col2.write("")
+col2.write("Replicating the Machine Learning Models Used to Train the Portuguese Dataset with Different Model Architectures! the performance of the models for the selected features vs the overall performance.")
 
 
 selected_variables = col1.multiselect("Select Variables for Training", df_ptg.columns, default=[])
@@ -79,6 +80,7 @@ x_train, x_test, y_train, y_test = train_test_split(df_selected.drop('Target', a
 
 # Train and plot the learning curves for the selected models
 results_col1,results_col2 = container.columns(2)
+results_col2.image(image_bytes)
 if col1.button("Train Models"):
     with st.spinner():
         for selected_model in selected_models:
@@ -103,8 +105,8 @@ if col1.button("Train Models"):
 
         # Display the learning curve plot
         results_col1.pyplot(plt)
-        placaHolder.empty()
-        results_col2.image(image_bytes)
+
+
 
 
         # Load the PNG image from file

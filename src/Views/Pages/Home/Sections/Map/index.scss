@@ -1,0 +1,39 @@
+.instructor-layout {
+	@apply w-full;
+	padding: 5% 5% 5% 0;
+	background-image: url(../../../../../Assets/Images/home/partners-back.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	.instructor-image {
+		@apply w-full;
+		img {
+
+			border-radius: 50%;
+			filter: grayscale(10%); max-width: 160px; max-height: 150px;
+		}
+	}
+
+	.instructor-info {
+		h2 {
+			@apply mb-0;
+		}
+
+		h3 {
+			color: #3b3b3b;
+			@apply text-2xl;
+		}
+
+		p {
+			@apply text-tertiary text-base;
+		}
+	}
+
+	.logos {
+		@apply flex items-center mx-auto;
+		// height: 3rem;
+		svg line {
+			stroke: $primary !important;
+		}
+	}
+}
