@@ -6,7 +6,7 @@ import { useInView } from '@src/Tools/Hooks/useIntersectionObserver';
 import { setActiveNavKey } from '@src/Tools/Store/actions/DashboardActions';
 import { Col, Grid, Row } from 'rsuite';
 // import vision_img from '@assets/Images/home/vision-image.png';
-import vision_img from '@assets/Images/home/site-header-image.png';
+import vision_img from '@assets/Images/home/homepage-header-right.png';
 
 
 const Vision = () => {

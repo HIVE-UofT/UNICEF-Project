@@ -10,10 +10,10 @@ import chart3 from '@assets/Images/home/chart3.jpg';
 
 export const our_vision = {
     section: ' ',
-    title: 'DECODING SCHOOL DROPOUT PREDICTION',
-    sub_title: ' ',
-    description:
-    'The foremost feature utilized by the existing studies to predict school dropout is the current study status of students—a key indicator that cannot be ignored. However, it is crucial to acknowledge that there are other aspects that demand our attention as well.',
+    title: 'APPLIED MACHINE LEARNING FOR HEALTH',
+    sub_title: 'Exploring the Application of Machine Learning in \n' +
+        'Public Health with EHR, Population, and Digital Data.',
+    description:''
 };
 
 export const our_chart = [
