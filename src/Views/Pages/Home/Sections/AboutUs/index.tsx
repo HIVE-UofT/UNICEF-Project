@@ -6,7 +6,7 @@ import { useRef, useEffect } from 'react';
 import useStore from '@src/Tools/Store/useStore';
 import { useInView } from '@src/Tools/Hooks/useIntersectionObserver';
 import { setActiveNavKey } from '@src/Tools/Store/actions/DashboardActions';
-import about_img from '@assets/Images/home/about-us.png';
+import about_img from '@assets/Images/home/homepage-aboutus-right.png';
 
 const AboutUs = () => {
 	const ref = useRef<HTMLDivElement | null>(null);

@@ -6,11 +6,13 @@
 	background-size: 100% 100%;
 
 	.instructor-image {
-		@apply w-full;
-		img {
 
+		img {
+			margin-right: 10px;
 			border-radius: 50%;
-			filter: grayscale(10%); max-width: 160px; max-height: 150px;
+			filter: grayscale(10%);
+			max-width: 70px;
+			max-height: 150px;
 		}
 	}
 
@@ -23,9 +25,13 @@
 			color: #3b3b3b;
 			@apply text-2xl;
 		}
+		.description2 {
+			color: $tertiary !important;
+		}
+		.description {
+			font-size: 18px !important; ;
 
-		p {
-			@apply text-tertiary text-base;
+			color: $primary !important;
 		}
 	}
 

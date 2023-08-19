@@ -12,8 +12,8 @@ export const our_vision = {
     section: ' ',
     title: 'APPLIED MACHINE LEARNING FOR HEALTH',
     sub_title: 'Exploring the Application of Machine Learning in \n' +
-        'Public Health with EHR, Population, and Digital Data.',
-    description:''
+        'Public Health',
+    description:'This course introduces practical machine learning in public health and healthcare. You will learn to develop, evaluate, and apply machine learning models for real healthcare issues, such as patient outcome prediction and disease diagnosis. Balancing theory and Python programming, the course offers hands-on projects and datathons, allowing you to apply your learning to actual healthcare data and solidify your understanding of machine learning concepts.'
 };
 
 export const our_chart = [
@@ -59,30 +59,28 @@ export const our_chart = [
 ];
 
 export const instructor = {
-    title: 'Ziqi Shu',
+    title: 'Team',
     name: 'DSI Trainee',
-        image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
+    image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
     description: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto, studying Cognitive Science and Computer Science. She is interested in applying computational models in studying human cognition and a wide range of topics in Computational Linguistics. In her spare time, Ziqi likes watching musicals, petting cats and sleeping.',
     people: [
-        // {
-        //     name: 'Zahra Shakeri',
-        //     image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
-        //     description: 'Supervisor',
-        // },
-        // {
-        //     name: 'Ziqi Shu',
-        //     image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
-        //     description: 'Creator',
-        // }
-        // , {
-        //     name: 'Jiayu Liangm',
-        //     image: 'https://hivelab-uoft.ca/images/team/Grace.JPG',
-        //     description: 'Creator',
-        // }, {
-        //     name: 'Yong Chen',
-        //     image: 'https://hivelab-uoft.ca/images/team/yong.png',
-        //     description: 'Creator',
-        // }
+        {
+            name: 'Zahra Shakeri',
+            image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
+            description: 'Instructor',
+            description2: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto',
+        }, {
+            name: 'Arash Amigh',
+            image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
+            description: 'Research Assistant ',
+            description2: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto',
+        } ,{
+            name: 'Aryan Sadeghi',
+            image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
+            description: 'Research Assistant',
+            description2: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto',
+        }
+
 
     ],
     logos: [toronto, dalla],

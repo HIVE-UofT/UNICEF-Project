@@ -9,6 +9,12 @@
 		background-color: rgba(246, 246, 246, 0.901);
 		@apply absolute w-full h-full;
 	}
+	.header-right {
+		background: url(../../../../../Assets/Images/home/homepage-header-network.png);
+		background-size: 50%;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
 
 	.vision-content {
 		@apply w-full;
@@ -18,15 +24,16 @@
 		h1 {
 			@apply font-semibold mb-2;
 			color: $primary;
-			font-size: 45px;
-			width: 50ch;
-			// line-height: 52.73px;
+			font-size: 40px;
+
+			 line-height: 45px;
 		}
 
 		h2 {
 			@apply font-semibold text-4xl mb-6;
 			color: $secondary;
 			width: 30ch;
+			font-size: 30px;
 		}
 
 		p {

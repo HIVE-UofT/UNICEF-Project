@@ -5,7 +5,7 @@
 .pnp.js
 node_modules
 .vscode
-
+.idea
 # yarn.lock
 
 # testing

@@ -55,6 +55,9 @@ const NavBar = () => {
 					<Nav.Item href='#about-us' className='nav-item' eventKey='about-us'>
 						About Us
 					</Nav.Item>
+					<Nav.Item href='#faq' className='nav-item' eventKey='faq'>
+						FAQ
+					</Nav.Item>
 					<Nav.Item href='#contact-us' className='nav-item' eventKey='contact-us'>
 						Contact Us
 					</Nav.Item>

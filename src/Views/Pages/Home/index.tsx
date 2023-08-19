@@ -12,13 +12,14 @@ const Home = () => {
 	return (
 		<div className='home-layout'>
 			<Vision />
-			<Chart />
-			<MlModel />
-			<Map />
+			{/*<Chart />*/}
+			{/*<MlModel />*/}
 			<Instructor />
+			<Map />
+			<ContactUs />
 
 			<AboutUs />
-			{/*<ContactUs />*/}
+
 		</div>
 	);
 };

@@ -5,7 +5,6 @@ import useStore from '@src/Tools/Store/useStore';
 import { useInView } from '@src/Tools/Hooks/useIntersectionObserver';
 import { setActiveNavKey } from '@src/Tools/Store/actions/DashboardActions';
 import { Col, Grid, Row } from 'rsuite';
-// import vision_img from '@assets/Images/home/vision-image.png';
 import vision_img from '@assets/Images/home/homepage-header-right.png';
 
 
@@ -25,7 +24,7 @@ const Vision = () => {
 			<div className='vision-content'>
 				<Grid className='w-full'>
 					<Row className='flex items-center w-full'>
-						<Col md={11}>
+						<Col className='header-right' md={10} lg={10}>
 							<div data-aos='fade-up' data-aos-duration='1000'>
 								<h4>{our_vision.section}</h4>
 								<h1>{our_vision.title}</h1>
@@ -33,7 +32,7 @@ const Vision = () => {
 								<p>{our_vision.description}</p>
 							</div>
 						</Col>
-						<Col className='m-auto lg-auto' md={11} lg={8} data-aos='zoom-in' data-aos-duration='1000'>
+						<Col className='m-auto lg-auto' md={19} lg={15} data-aos='zoom-in' data-aos-duration='1000'>
 							<img  src={vision_img} alt='' />
 						</Col>
 					</Row>
