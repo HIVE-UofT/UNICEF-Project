@@ -34,9 +34,9 @@ const Footer = () => {
 							<a href='#contact-us'>Contact Us</a>
 						</Col>
 						<Col md={18}>
-							<h5>Linkedin</h5>
-							<h5>Twitter</h5>
-							<h5>Instagram</h5>
+							<a target="_blank" href="https://viz-hivelab.com">Visualization Course</a>
+							<a target="_blank" href="https://ihpme.utoronto.ca/">IHPME</a>
+							<a target="_blank" href="https://www.dlsph.utoronto.ca/">DLSPH</a>
 						</Col>
 					</Col>
 

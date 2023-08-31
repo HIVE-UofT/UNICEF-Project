@@ -70,19 +70,19 @@ export const instructor = {
             name: 'Zahra Shakeri',
             image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
             description: 'Instructor',
-            description2: 'Zahra Shakeri is an Assistant Professor of Health Informatics and Information Visualization at the Dalla Lana School of Public Health, University of Toronto.',
+            description2: 'Zahra Shakeri is an Assistant Professor at the University of Toronto’s Dalla Lana School of Public Health, specializing in Health Informatics, Information Visualization, and Digital Health. Her research focuses on precision (public) health, social media analysis, and digital health.',
         },
         {
             name: 'Arash Amigh',
             image: arash,
             description: 'Research Assistant ',
-            description2: 'Arash Amigh is an Research Assistant of Health Informatics and Information Visualization at the Dalla Lana School of Public Health, University of Toronto.',
+            description2: 'Arash is a skilled data scientist and machine learning enthusiast, boasting eight years of industry leadership. He also contributes as a research assistant at the HIVE Lab within the Dalla Lana School of Public Health, University of Toronto.'
         },
         {
             name: 'Aryan Sadeghi',
             image: 'https://hivelab-uoft.ca/images/team/aryan.jpeg',
             description: 'Research Assistant',
-            description2: 'Aryan Sadeghi is a data engineer and a passionate machine learning enthusiast.An Research Assistant at the Dalla Lana School of Public Health, University of Toronto.',
+            description2: 'Aryan, with six years of leadership in the industry, is a data engineer and machine learning enthusiast. He is also a research assistant at the HIVE Lab in the Dalla Lana School of Public Health at the University of Toronto.'
         }
 
 
