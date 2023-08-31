@@ -7,6 +7,8 @@ import chart from '@assets/Images/home/statistic-chart.svg';
 import chart1 from '@assets/Images/home/chart1-1.png';
 import chart2 from '@assets/Images/home/chart2.jpg';
 import chart3 from '@assets/Images/home/chart3.jpg';
+import arash from '@assets/Images/home/arash.jpeg';
+
 
 export const our_vision = {
     section: ' ',
@@ -68,17 +70,19 @@ export const instructor = {
             name: 'Zahra Shakeri',
             image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
             description: 'Instructor',
-            description2: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto',
-        }, {
+            description2: 'Zahra Shakeri is an Assistant Professor of Health Informatics and Information Visualization at the Dalla Lana School of Public Health, University of Toronto.',
+        },
+        {
             name: 'Arash Amigh',
-            image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
+            image: arash,
             description: 'Research Assistant ',
-            description2: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto',
-        } ,{
+            description2: 'Arash Amigh is an Research Assistant of Health Informatics and Information Visualization at the Dalla Lana School of Public Health, University of Toronto.',
+        },
+        {
             name: 'Aryan Sadeghi',
-            image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
+            image: 'https://hivelab-uoft.ca/images/team/aryan.jpeg',
             description: 'Research Assistant',
-            description2: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto',
+            description2: 'Aryan Sadeghi is a data engineer and a passionate machine learning enthusiast.An Research Assistant at the Dalla Lana School of Public Health, University of Toronto.',
         }
 
 
