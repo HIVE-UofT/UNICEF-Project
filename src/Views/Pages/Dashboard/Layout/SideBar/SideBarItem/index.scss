@@ -18,7 +18,7 @@
 
 		.active-circle {
 			@apply h-2 w-2 animate-fade-in;
-			fill: $secondary !important;
+			fill: $primary !important;
 		}
 		.title {
 			@apply transform -translate-x-4
@@ -110,7 +110,7 @@
 			@apply text-white font-semibold;
 
 			.fa-icon {
-				fill: #ae4b69 !important;
+				fill: #CCA000 !important;
 			}
 		}
 	}
