@@ -30,7 +30,7 @@ export const login = createAsyncThunk<any, { username: any; password: any }>(
         let data: any;
 
         try {
-            const {json} = await authFetch.post('http://localhost:9090/api/auth/signin', {
+            const {json} = await authFetch.post('http://ml.hivelab-uoft.ca:9078/api/auth/signin', {
                 body: {
                     email : username,
                     password : password

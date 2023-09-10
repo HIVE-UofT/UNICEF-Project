@@ -57,7 +57,7 @@ const SigninDrawer = () => {
         const full_name = valueOf('full_name');
         let data :any
         try {
-            const {json} = await authFetch.post('http://localhost:9090/api/auth/signup', {
+            const {json} = await authFetch.post('http://http://ml.hivelab-uoft.ca:9078/api/auth/signup', {
                 body: {
                     email : username,
                     password : password,
