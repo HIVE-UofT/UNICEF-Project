@@ -5,9 +5,9 @@ export const data = {
 	form: {
 		header: 'Hi, Welcome to Our Course!',
 		text: {
-			first_part: 'Log in to view the course materials, or complete the',
-			link: 'contact form',
-			last_part: 'to request access.',
+			first_part: 'Log in to view the course materials.',
+			link: ' ',
+			last_part: ' ',
 		},
 	},
 };

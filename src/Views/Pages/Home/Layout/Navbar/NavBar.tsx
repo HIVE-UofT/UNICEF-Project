@@ -62,6 +62,17 @@ const NavBar = () => {
 						Contact Us
 					</Nav.Item>
 				</Nav>
+				<Nav className='login-btn' pullRight>
+					<If condition={loggedIn}>
+						<FaIcon onClick={logoutUser} className='logout-btn' fa='l-power-off' />
+						<Btn onClick={() => push('/dashboard')}>Dashboard</Btn>
+						<Else>
+							<Btn fa='r-user' onClick={loginDrawer.open}>
+								Sign In
+							</Btn>
+						</Else>
+					</If>
+				</Nav>
 			</Navbar>
 		</div>
 	);

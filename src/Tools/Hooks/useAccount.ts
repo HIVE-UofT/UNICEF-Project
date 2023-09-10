@@ -24,6 +24,7 @@ const useAccount = () => {
 };
 
 export const isTokenValid = (token?: string) => {
+	console.log("isTokenValid")
 	if (!token) token = window?.user_token || '';
 	if (!token) return false;
 	const exp = jwtDecode(token || '')?.exp;

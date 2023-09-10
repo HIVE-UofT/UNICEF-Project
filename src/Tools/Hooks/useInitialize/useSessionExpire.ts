@@ -20,7 +20,10 @@ const useSessionExpire = () => {
 	//? -------------------- useEffects ------------------------------------------------------
 
 	useEffect(() => {
-		if (user?.token && isTokenValid(user?.token)) setLogoutTimer();
+		console.log("here useEffect")
+		console.log(user)
+		// if (user?.token && isTokenValid(user?.token)) setLogoutTimer();
+		if (user?.token ) setLogoutTimer();
 		else logOutUser();
 		return () => clearTimeout(logOutTimeOutRef?.current);
 	}, []);
@@ -36,24 +39,28 @@ const useSessionExpire = () => {
 
 	//? --------------- LogOut timer ---------------------------
 	const setLogoutTimer = (token?: string) => {
-		if (!user?.token) return;
-		const { exp } = jwtDecode(token ? token : user?.token!!) || {};
-		if (!exp) return;
+		console.log("setLogoutTimer")
 
-		//? Remain time
-		const remain_time = exp * 1000 - Date.now();
-		expireLog(remain_time);
+		// if (!user?.token) return;
+		// const { exp } = jwtDecode(token ? token : user?.token!!) || {};
+		// if (!exp) return;
 
-		//? Refresh token handler
-		refreshTokenHandler(remain_time - REFRESH_TOKEN_THRESHOLD);
-
-		//? Set timer
-		clearTimeout(logOutTimeOutRef?.current);
-		logOutTimeOutRef.current = setTimeout(logOutUser, remain_time);
+		// //? Remain time
+		// const remain_time = exp * 1000 - Date.now();
+		// expireLog(remain_time);
+		//
+		// //? Refresh token handler
+		// refreshTokenHandler(remain_time - REFRESH_TOKEN_THRESHOLD);
+		//
+		// //? Set timer
+		// clearTimeout(logOutTimeOutRef?.current);
+		// logOutTimeOutRef.current = setTimeout(logOutUser, remain_time);
 	};
 
 	//? --------------- Refresh token --------------------------
 	const refreshTokenHandler = async (remain_time: number) => {
+		console.log("refreshTokenHandler")
+		return;
 		if (!user?.token) return;
 		try {
 			const handler = async () => {
