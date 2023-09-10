@@ -72,7 +72,7 @@ export type AccountType = {
 };
 
 export type ROLE_ITEM =
-	| 'INTRO_TO_DATA_VISUALIZATION'
+	| 'INTRO_TO_ML'
 	| 'CATEGORICAL_DATA'
 	| 'NLP'
 	| 'NUMERICAL_DATA'
@@ -90,7 +90,7 @@ export const ACCESSES = {
 	ALL: {
 		label: 'All',
 		children: {
-			INTRO_TO_DATA_VISUALIZATION: { label: 'Introduction to Data Visualization' },
+			INTRO_TO_ML: { label: 'Introduction to Machine Learning' },
 			CATEGORICAL_DATA: { label: 'Categorical Data' },
 			NLP: { label: 'Natural Language Processing' },
 			NUMERICAL_DATA: { label: 'Numerical Data' },

@@ -13,7 +13,7 @@ import logo from '@assets/icons/logo-with-text.svg';
 import useAccount from '@src/Tools/Hooks/useAccount';
 import {Grid, Row, Col, Drawer, Checkbox} from 'rsuite';
 import banner from '../../Assets/Images/signin/Banner2.png';
-import {login} from '@src/Tools/Store/actions/AccountActions';
+import {login, UserAuthApi} from '@src/Tools/Store/actions/AccountActions';
 import EditableInput from '@src/Components/EditableInput/EditableInput';
 import {authFetch} from "@tools/Hooks/useFetch";
 import {clearLocalStorage} from "@tools/Store/actions/LocalStorageActions";
@@ -57,7 +57,7 @@ const SigninDrawer = () => {
         const full_name = valueOf('full_name');
         let data :any
         try {
-            const {json} = await authFetch.post('http://ml.hivelab-uoft.ca:9078/api/auth/signup', {
+            const {json} = await authFetch.post(`${UserAuthApi}/signup`, {
                 body: {
                     email : username,
                     password : password,

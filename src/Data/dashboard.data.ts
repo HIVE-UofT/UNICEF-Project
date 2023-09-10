@@ -6,6 +6,7 @@ import Saturation from '@assets/Images/dashboard/home/saturation.png';
 import { ReactComponent as NLP } from '@assets/icons/dashboard/sidebar/nlp.svg';
 import { ReactComponent as Home } from '@assets/icons/dashboard/sidebar/home.svg';
 import { ReactComponent as Wrench } from '../Assets/icons/dashboard/sidebar/wrench.svg';
+import { ReactComponent as Brain } from '../Assets/icons/dashboard/sidebar/brain-solid.svg';
 import { ReactComponent as Survey } from '../Assets/icons/dashboard/sidebar/survey.svg';
 import { ReactComponent as Story } from '@assets/icons/dashboard/sidebar/storyboard.svg';
 import { ReactComponent as Comparison } from '@assets/icons/dashboard/sidebar/comparison.svg';
@@ -23,74 +24,74 @@ export const sidebar_menu = [
 	},
 	{
 		key: 'L1',
-		title: 'Introduction to - Data Visualization',
-		icon: Wrench,
-		items: ['Data visualization Principles', 'Visualization Tools - at a Glance', 'Tableau Tutorial'],
-		roles: ['INTRO_TO_DATA_VISUALIZATION'],
+		title: 'Introduction to Machine Learning',
+		icon: Brain,
+		items: ['Machine Learning Tasks', 'Python Basics', 'Python Practical Application'],
+		roles: ['INTRO_TO_ML'],
 	},
-	{
-		key: 'L2',
-		title: 'Categorical Data',
-		icon: Categorical,
-		items: ['Bar', 'Bubble', 'Pie (Donut)', 'Tile', 'Tableau Tutorial'],
-		roles: ['CATEGORICAL_DATA'],
-	},
-	{
-		key: 'L3',
-		title: 'Natural Language - Processing',
-		items: ['Sentiment Analysis - and n-grams', 'Topic Modeling'],
-		icon: NLP,
-		roles: ['NLP'],
-	},
-	{
-		key: 'L4',
-		title: 'Numerical Data',
-		items: ['Box', 'Violin'],
-		icon: Numerical,
-		roles: ['NUMERICAL_DATA'],
-	},
-	{
-		key: 'L5',
-		title: 'Hierarchical Data',
-		items: ['Trees', 'Sunburst', 'Packed circles', 'Treemap'],
-		icon: Categories,
-		roles: ['HIERARCHICAL_DATA'],
-	},
-	{
-		key: 'L6',
-		title: 'Temporal and - Ordinal Data',
-		items: ['Area', 'Comet', 'Sankey', 'Sparkline', 'Stream'],
-		roles: ['TEMPORAL_AND_ORDINAL_DATA'],
-		icon: Temporal,
-	},
-	{
-		key: 'L7',
-		title: 'Visual Story Telling',
-		items: ['Story1 - Lives Lost to Suicide', 'Story2 - Suicidal Thoughts', 'Story3 - Cannabis Use'],
-		roles: ['VISUAL_STORY_TELLING'],
-		icon: Story,
-	},
-	{
-		key: 'L8',
-		title: 'Geospatial Data',
-		roles: ['GEOSPATIAL_DATA'],
-		items: ['Choropleth', 'Tableau Tutorial (Bubble & Choropleth Maps)'],
-		icon: Geospatial,
-	},
-	{
-		key: 'L9',
-		roles: ['VISUALIZE_COMPARISONS'],
-		title: 'Visualize Comparisons',
-		items: ['Bump', 'Chord', 'Funnel', 'Parallel Coordinates', 'Upset'],
-		icon: Comparison,
-	},
-	{
-		key: 'L10',
-		roles: ['SURVEY_DATA'],
-		title: 'Survey Data',
-		items: ['Likert'],
-		icon: Survey,
-	},
+	// {
+	// 	key: 'L2',
+	// 	title: 'Categorical Data',
+	// 	icon: Categorical,
+	// 	items: ['Bar', 'Bubble', 'Pie (Donut)', 'Tile', 'Tableau Tutorial'],
+	// 	roles: ['CATEGORICAL_DATA'],
+	// },
+	// {
+	// 	key: 'L3',
+	// 	title: 'Natural Language - Processing',
+	// 	items: ['Sentiment Analysis - and n-grams', 'Topic Modeling'],
+	// 	icon: NLP,
+	// 	roles: ['NLP'],
+	// },
+	// {
+	// 	key: 'L4',
+	// 	title: 'Numerical Data',
+	// 	items: ['Box', 'Violin'],
+	// 	icon: Numerical,
+	// 	roles: ['NUMERICAL_DATA'],
+	// },
+	// {
+	// 	key: 'L5',
+	// 	title: 'Hierarchical Data',
+	// 	items: ['Trees', 'Sunburst', 'Packed circles', 'Treemap'],
+	// 	icon: Categories,
+	// 	roles: ['HIERARCHICAL_DATA'],
+	// },
+	// {
+	// 	key: 'L6',
+	// 	title: 'Temporal and - Ordinal Data',
+	// 	items: ['Area', 'Comet', 'Sankey', 'Sparkline', 'Stream'],
+	// 	roles: ['TEMPORAL_AND_ORDINAL_DATA'],
+	// 	icon: Temporal,
+	// },
+	// {
+	// 	key: 'L7',
+	// 	title: 'Visual Story Telling',
+	// 	items: ['Story1 - Lives Lost to Suicide', 'Story2 - Suicidal Thoughts', 'Story3 - Cannabis Use'],
+	// 	roles: ['VISUAL_STORY_TELLING'],
+	// 	icon: Story,
+	// },
+	// {
+	// 	key: 'L8',
+	// 	title: 'Geospatial Data',
+	// 	roles: ['GEOSPATIAL_DATA'],
+	// 	items: ['Choropleth', 'Tableau Tutorial (Bubble & Choropleth Maps)'],
+	// 	icon: Geospatial,
+	// },
+	// {
+	// 	key: 'L9',
+	// 	roles: ['VISUALIZE_COMPARISONS'],
+	// 	title: 'Visualize Comparisons',
+	// 	items: ['Bump', 'Chord', 'Funnel', 'Parallel Coordinates', 'Upset'],
+	// 	icon: Comparison,
+	// },
+	// {
+	// 	key: 'L10',
+	// 	roles: ['SURVEY_DATA'],
+	// 	title: 'Survey Data',
+	// 	items: ['Likert'],
+	// 	icon: Survey,
+	// },
 ];
 
 export const home_data = {

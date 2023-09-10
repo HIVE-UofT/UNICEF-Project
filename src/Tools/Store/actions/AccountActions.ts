@@ -23,6 +23,7 @@ export const logout = createAction('logout');
 //* Set Token
 export const setUserToken = createAction<string>('setUserToken');
 
+export const UserAuthApi = "http://ml.hivelab-uoft.ca:9078/api/auth"
 //* Login
 export const login = createAsyncThunk<any, { username: any; password: any }>(
     'login',
@@ -30,7 +31,7 @@ export const login = createAsyncThunk<any, { username: any; password: any }>(
         let data: any;
 
         try {
-            const {json} = await authFetch.post('http://ml.hivelab-uoft.ca:9078/api/auth/signin', {
+            const {json} = await authFetch.post(`${UserAuthApi}/signin`, {
                 body: {
                     email : username,
                     password : password

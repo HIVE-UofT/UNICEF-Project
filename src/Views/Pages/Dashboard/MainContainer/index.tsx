@@ -24,7 +24,7 @@ import Sunburst from './pages/Lecture5/Sunburst';
 import Upset from './pages/Lecture9/Upset/index';
 import Bubble from './pages/Lecture2/Bubble/index';
 import Funnel from './pages/Lecture9/Funnel/index';
-import Tableau from './pages/Lecture1/Tableau/index';
+import {IntroToPython, PythonApplications} from './pages/Lecture1';
 import Network from './pages/Lecture3/Network/index';
 import Lollipop from './pages/Lecture1/Lollipop/index';
 import Parallel from './pages/Lecture9/Parallel/index';
@@ -42,10 +42,12 @@ const MainContainer = () => {
 			<If condition={['home']?.includes(state?.tmp?.page?.active)}>
 				<Home />
 			</If>
+			 {/*Pashmammmmmmmmm, todo: refactor as soon as posible !*/}
 			<If condition={state.tmp?.page?.active === 'L1'}>
 				<Select>
 					<When condition={state.tmp?.page?.subPage === 'Visualization Tools - at a Glance'} children={<Lollipop />} />
-					<When condition={state.tmp?.page?.subPage === 'Tableau Tutorial'} children={<Tableau />} />
+					<When condition={state.tmp?.page?.subPage === 'Python Basics'} children={<IntroToPython />} />
+					<When condition={state.tmp?.page?.subPage === 'Python Practical Application'} children={<PythonApplications />} />
 					<OtherWise children={<Home />} />
 				</Select>
 			</If>

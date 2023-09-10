@@ -4,7 +4,7 @@ $sidebar-close-width: 80px;
 .dashboard-sidebar-layout {
 	width: $sidebar-close-width;
 	// min-width: $sidebar-close-width;
-	@apply bg-primary h-full transition-all flex flex-col relative;
+	@apply bg-secondary h-full transition-all flex flex-col relative;
 	transition-duration: 0.5s;
 	z-index: 45;
 
