@@ -307,9 +307,9 @@ const SigninDrawer = () => {
                                 </div>
                             </Col>
                             <Col className='right-col' md={14}>
-                                <div className='content'>
-                                    <img src={banner} alt=''/>
-                                </div>
+                                {/*<div className='content'>*/}
+                                {/*    <img src={banner} alt=''/>*/}
+                                {/*</div>*/}
                             </Col>
                         </Row>
                     </Grid>
