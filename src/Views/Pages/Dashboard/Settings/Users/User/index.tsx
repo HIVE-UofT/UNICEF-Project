@@ -27,7 +27,7 @@ const User = () => {
 	const { mode } = usePageMode();
 	const { dispatch } = useStore();
 	const { push, replace } = useHistory();
-	const { Class: USER } = useClass('VIZ_SYSTEM_USER');
+	const { Class: USER } = useClass('users');
 	// const { registerMediaPicker, setMediaPickerOpen } = useGallery();
 
 	// ? --------------- Extra Vars 👇 ------------------------------- //
@@ -49,13 +49,12 @@ const User = () => {
 			email: 'Email *',
 			status: 'Status',
 			name: 'Full Name *',
-			username: 'Username *',
+
 			password: 'Password ',
 		},
 		validation: {
 			name: { required: true },
 			email: { required: true },
-			username: { required: true },
 			password: { required: mode?.is?.add },
 		},
 	});
@@ -103,6 +102,7 @@ const User = () => {
 	// ---------- Set User ---------- //
 	const setUser = async () => {
 		try {
+
 			const { item, message } =
 				(await USER?.putItem({
 					VIZ_SYSTEM_USER_ID: mode?.is?.add ? undefined : id,
@@ -146,24 +146,7 @@ const User = () => {
 	}, [id]);
 
 	const header = (
-		// <div className='header'>
-		// 	<div className='img-wrapper'>
-		// 		<FaIcon fa='r-paperclip' />
-		// 		<If condition={!state?.tmp?.data?.image?.item?.thumbnail}>
-		// 			<FaIcon fa='s-user' />
 
-		// 			<Else>
-		// 				<img src={state?.tmp?.data?.image?.item?.thumbnail} alt={valueOf('name')} />
-		// 			</Else>
-		// 		</If>
-
-		// 		<If condition={mode?.is?.edit}>
-		// 			<div className='footer-wrapper' title='Select Image'>
-		// 				<FaIcon fa='s-camera' onClick={() => setMediaPickerOpen(true)} />
-		// 			</div>
-		// 		</If>
-		// 	</div>
-		// </div>
 
 		<div className='flex items-center opacity-60 py-3'>
 			<FaIcon fa='r-user' />
@@ -197,8 +180,8 @@ const User = () => {
 		name,
 		role: viewAccess,
 		email,
-		username,
-		password,
+
+		password : "",
 		status: status === undefined ? 'ACTIVE' : status,
 	};
 

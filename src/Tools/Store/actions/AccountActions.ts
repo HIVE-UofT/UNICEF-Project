@@ -9,6 +9,7 @@ import {authFetch} from '@src/Tools/Hooks/useFetch';
 import {createHashId} from '@src/Tools/Utils/ID';
 import {Notify} from '@src/Tools/Utils/React';
 import {clearLocalStorage} from './LocalStorageActions';
+import {APIAddr} from "@tools/Hooks/useClass";
 
 const LOGIN_ERROR_MESSAGE = 'Email and password are invalid';
 
@@ -23,7 +24,7 @@ export const logout = createAction('logout');
 //* Set Token
 export const setUserToken = createAction<string>('setUserToken');
 
-export const UserAuthApi = "http://ml.hivelab-uoft.ca:9078/api/auth"
+export const UserAuthApi = `${APIAddr}/auth`
 //* Login
 export const login = createAsyncThunk<any, { username: any; password: any }>(
     'login',
