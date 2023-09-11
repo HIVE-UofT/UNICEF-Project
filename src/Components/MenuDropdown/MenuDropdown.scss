@@ -38,8 +38,14 @@
 				@apply mr-2;
 				width: 18px;
 			}
-
+			&.go-to-prof:hover {
+				background: $primary;
+			}
+			&.log-out:hover {
+				background: $primary;
+			}
 			&.log-out {
+
 				.fa-icon {
 					transform: rotate(180deg) translateX(0.15rem) !important;
 				}

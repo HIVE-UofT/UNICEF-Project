@@ -15,3 +15,12 @@ export const PythonApplications = () => {
 	);
 };
 
+
+export const MachineLearning = () => {
+	return (
+		<iframe id="serviceFrameSend"
+				style={{height: '100%',zIndex:'999'}}	src='l1/index.html'
+				frameBorder="0"></iframe>
+	);
+};
+

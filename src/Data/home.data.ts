@@ -12,7 +12,7 @@ import arash from '@assets/Images/home/arash.jpeg';
 
 export const our_vision = {
     section: ' ',
-    title: 'APPLIED MACHINE LEARNING FOR HEALTH',
+    title: 'APPLIED MACHINE LEARNING FOR HEALTH DATA',
     sub_title: 'Exploring the Application of Machine Learning in \n' +
         'Public Health',
     description:'This course introduces practical machine learning in public health and healthcare. You will learn to develop, evaluate, and apply machine learning models for real healthcare issues, such as patient outcome prediction and disease diagnosis. Balancing theory and Python programming, the course offers hands-on projects and datathons, allowing you to apply your learning to actual healthcare data and solidify your understanding of machine learning concepts.'

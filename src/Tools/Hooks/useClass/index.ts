@@ -47,6 +47,7 @@ const useClass = <T extends OBJECT>(CLASS_NAME: SUG<CLASS_NAMES>, options?: UC_O
 		_emitLoading('getItem', true);
 		let result;
 		try {
+			console.log("hre request")
 			result = await Get({ url: `${URL}/${id}` });
 		} catch (e) {
 			throw e;

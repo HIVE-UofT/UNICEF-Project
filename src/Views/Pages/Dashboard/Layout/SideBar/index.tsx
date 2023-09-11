@@ -123,6 +123,7 @@ const SideBar = () => {
 									action: () => replace(`/dashboard/settings/users/${user?.ID}`),
 									icon: 'l-address-card',
 									title: 'Go to profile',
+									iconClass: 'go-to-prof',
 								},
 								{
 									action: logOut,
