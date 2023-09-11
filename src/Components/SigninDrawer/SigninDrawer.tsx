@@ -12,7 +12,7 @@ import {classes} from '../../Tools/Utils/React';
 import logo from '@assets/icons/logo-with-text.svg';
 import useAccount from '@src/Tools/Hooks/useAccount';
 import {Grid, Row, Col, Drawer, Checkbox} from 'rsuite';
-import banner from '../../Assets/Images/signin/Banner2.png';
+import banner from '../../Assets/Images/signin/SignUp.jpg';
 import {login, UserAuthApi} from '@src/Tools/Store/actions/AccountActions';
 import EditableInput from '@src/Components/EditableInput/EditableInput';
 import {authFetch} from "@tools/Hooks/useFetch";
@@ -214,9 +214,9 @@ const SigninDrawer = () => {
                                 </div>
                             </Col>
                             <Col className='right-col' md={14}>
-                                {/*<div className='content'>*/}
-                                {/*    <img src={banner} alt=''/>*/}
-                                {/*</div>*/}
+                                <div className='content'>
+                                    <img src={banner} alt=''/>
+                                </div>
                             </Col>
                         </Row>
                     </Grid>
@@ -307,9 +307,9 @@ const SigninDrawer = () => {
                                 </div>
                             </Col>
                             <Col className='right-col' md={14}>
-                                {/*<div className='content'>*/}
-                                {/*    <img src={banner} alt=''/>*/}
-                                {/*</div>*/}
+                                <div className='content'>
+                                    <img src={banner} alt=''/>
+                                </div>
                             </Col>
                         </Row>
                     </Grid>
