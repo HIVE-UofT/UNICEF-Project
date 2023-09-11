@@ -235,7 +235,8 @@ const useClass = <T extends OBJECT>(CLASS_NAME: SUG<CLASS_NAMES>, options?: UC_O
 };
 
 
-export const APIAddr = `http://ml.hivelab-uoft.ca:9078/api`
+export const APIAddr = `https://ml.hivelab-uoft.ca/api`
+// export const APIAddr = `http://localhost:9090/api`
 export const getClassUrl = (className: string) => `${APIAddr}/${className}`;
 
 export default useClass;
