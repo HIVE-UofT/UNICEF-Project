@@ -8,13 +8,23 @@ const DashboardRouter = () => <RouteRenderer base='/dashboard/settings' {...{ ro
 export const routes: Path[] = [
 	{
 		exact: false,
+		path: ['/teams/:id'],
+		component: lazy(() => import('./Teams/Team')),
+	},
+	{
+		exact: false,
+		path: ['/teams'],
+		component: lazy(() => import('./Teams/Teams')),
+	},
+	{
+		exact: false,
 		path: ['/users/:id'],
-		component: lazy(() => import('./User')),
+		component: lazy(() => import('./Users/User')),
 	},
 	{
 		exact: false,
 		path: ['/users'],
-		component: lazy(() => import('./Users')),
+		component: lazy(() => import('./Users/Users')),
 	},
 
 	{

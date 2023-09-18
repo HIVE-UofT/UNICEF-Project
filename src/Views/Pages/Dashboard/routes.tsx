@@ -9,7 +9,7 @@ export const routes: Path[] = [
 	{
 		exact: false,
 		path: ['/settings'],
-		component: lazy(() => import('./Settings/Users')),
+		component: lazy(() => import('./Settings')),
 	},
 	{
 		exact: false,

@@ -75,33 +75,59 @@ const SideBar = () => {
 			<div className='sidebar-footer'>
 				{/* --------------------------------------- hot fix -----------------------------------------*/}
 				<>
-					<If condition={!!user?.role?.isSuper}>
-						<SideBarItem isFooter>
-							<MenuDropdown
-								title='Settings'
-								mainMenu={
-									<Btn
-										fa='l-gear'
-										className='border-none'
-										appearance='ghost'
-										title='Settings'
-										children={
-											<div className='header'>
-												<div className='title'>Settings</div>
-											</div>
-										}
-									/>
-								}
-								submenus={[
-									{
-										action: () => push('/dashboard/settings/users'),
-										icon: 'l-users',
-										title: 'Users',
-									},
-								]}
-							/>
-						</SideBarItem>
-					</If>
+					<SideBarItem isFooter>
+						<MenuDropdown
+							title='Teams'
+							mainMenu={
+								<Btn
+									fa='l-users-medical'
+									className='border-none'
+									appearance='ghost'
+									title='Teams'
+
+									children={
+										<div className='header'>
+											<div className='title'>Teams</div>
+										</div>
+									}
+								/>
+							}
+							submenus={[
+								{
+									action: () => push('/dashboard/settings/teams'),
+									icon: 'l-users-medical',
+									title: 'Teams',
+								},
+							]}
+						/>
+					</SideBarItem>
+					{/*<If condition={!!user?.role?.isSuper}>*/}
+					{/*	<SideBarItem isFooter>*/}
+					{/*		<MenuDropdown*/}
+					{/*			title='Settings'*/}
+					{/*			mainMenu={*/}
+					{/*				<Btn*/}
+					{/*					fa='l-gear'*/}
+					{/*					className='border-none'*/}
+					{/*					appearance='ghost'*/}
+					{/*					title='Settings'*/}
+					{/*					children={*/}
+					{/*						<div className='header'>*/}
+					{/*							<div className='title'>Settings</div>*/}
+					{/*						</div>*/}
+					{/*					}*/}
+					{/*				/>*/}
+					{/*			}*/}
+					{/*			submenus={[*/}
+					{/*				{*/}
+					{/*					action: () => push('/dashboard/settings/users'),*/}
+					{/*					icon: 'l-users',*/}
+					{/*					title: 'Users',*/}
+					{/*				},*/}
+					{/*			]}*/}
+					{/*		/>*/}
+					{/*	</SideBarItem>*/}
+					{/*</If>*/}
 					<SideBarItem isFooter>
 						<MenuDropdown
 							title='Profile'

@@ -28,8 +28,8 @@
 
 		thead {
 			@apply block shadow-light rounded-2xl;
-			background: rgb(174, 75, 105);
-			background: linear-gradient(163deg, rgba(174, 75, 105, 0.3981967787114846) 9%, rgba(246, 228, 234, 1) 75%);
+			background: $primary;
+			background: linear-gradient(163deg, #efce5c 9%, #fff7d6 75%);
 
 			th {
 				font-size: 0.9rem !important;
