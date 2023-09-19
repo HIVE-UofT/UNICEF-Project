@@ -34,6 +34,7 @@ import Choropleth from './pages/Lecture8/Choropleth/index';
 import PackedCircle from './pages/Lecture5/PackedCircle/index';
 import { useDashboardContext } from '../Utils/DashboardContext';
 import ChoroplethTableau from './pages/Lecture8/ChoroplethTableau/index';
+import {Python2, KNN, Kmeans, SvU} from "@src/Views/Pages/Dashboard/MainContainer/pages/Lecture2";
 
 const MainContainer = () => {
 	const { state } = useDashboardContext();
@@ -53,11 +54,10 @@ const MainContainer = () => {
 			</If>
 			<If condition={state.tmp?.page?.active === 'L2'}>
 				<Select>
-					<When condition={state.tmp?.page?.subPage === 'Bar'} children={<Bar />} />
-					<When condition={state.tmp?.page?.subPage === 'Bubble'} children={<Bubble />} />
-					<When condition={state.tmp?.page?.subPage === 'Pie (Donut)'} children={<Pie />} />
-					<When condition={state.tmp?.page?.subPage === 'Tile'} children={<Tile />} />
-					<When condition={state.tmp?.page?.subPage === 'Tableau Tutorial'} children={<CategoricalTableau />} />
+					<When condition={state.tmp?.page?.subPage === 'Supervises vs. Unsupervised Learning'} children={<SvU />} />
+					<When condition={state.tmp?.page?.subPage === 'Python Basics II'} children={<Python2 />} />
+					<When condition={state.tmp?.page?.subPage === 'K-Nearest Neighbours'} children={<KNN />} />
+					<When condition={state.tmp?.page?.subPage === 'K-Means'} children={<Kmeans />} />
 				</Select>
 			</If>
 			<If condition={state.tmp?.page?.active === 'L3'}>

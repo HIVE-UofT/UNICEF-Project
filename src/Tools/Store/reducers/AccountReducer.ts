@@ -91,6 +91,7 @@ export const ACCESSES = {
 		label: 'All',
 		children: {
 			INTRO_TO_ML: { label: 'Introduction to Machine Learning' },
+			Supervises: { label: 'Supervises vs. Unsupervised Learning' },
 			CATEGORICAL_DATA: { label: 'Categorical Data' },
 			NLP: { label: 'Natural Language Processing' },
 			NUMERICAL_DATA: { label: 'Numerical Data' },

@@ -5,6 +5,7 @@ import Direction from '@assets/Images/dashboard/home/direction.png';
 import Saturation from '@assets/Images/dashboard/home/saturation.png';
 import { ReactComponent as NLP } from '@assets/icons/dashboard/sidebar/nlp.svg';
 import { ReactComponent as Home } from '@assets/icons/dashboard/sidebar/home.svg';
+import { ReactComponent as ArrowUp } from '@assets/icons/dashboard/sidebar/arrow-up-right-dots-solid.svg';
 import { ReactComponent as Wrench } from '../Assets/icons/dashboard/sidebar/wrench.svg';
 import { ReactComponent as Brain } from '../Assets/icons/dashboard/sidebar/brain-solid.svg';
 import { ReactComponent as Survey } from '../Assets/icons/dashboard/sidebar/survey.svg';
@@ -28,6 +29,13 @@ export const sidebar_menu = [
 		icon: Brain,
 		items: ['Machine Learning Tasks', 'Python Basics', 'Python Practical Application'],
 		roles: ['INTRO_TO_ML'],
+	},
+	{
+		key: 'L2',
+		title: 'Supervised vs. Unsupervised Learning',
+		icon: ArrowUp,
+		items: ['Supervises vs. Unsupervised Learning', 'Python Basics II', 'K-Nearest Neighbours',"K-Means"],
+		roles: ['Supervises'],
 	},
 	// {
 	// 	key: 'L2',
