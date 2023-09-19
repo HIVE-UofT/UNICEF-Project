@@ -1,4 +1,4 @@
-
+import imga from '@assets/Images/dashboard/lecture1/CHL5230-Lecture 2-KNN&Kmeans.jpg'
 export const Python2 = () => {
 	return (
 		<iframe id="serviceFrameSend"
@@ -14,11 +14,16 @@ export const KNN = () => {
 				frameBorder="0"></iframe>
 	);
 };
+// export const SvU = () => {
+// 	return (
+// 		<iframe id="serviceFrameSend"
+// 				style={{height: '100%',zIndex:'999'}}	src='l2/index.html'
+// 				frameBorder="0"></iframe>
+// 	);
+// };
 export const SvU = () => {
 	return (
-		<iframe id="serviceFrameSend"
-				style={{height: '100%',zIndex:'999'}}	src='l2/index.html'
-				frameBorder="0"></iframe>
+		<img src={imga} style={{height: '100%',zIndex:'999'}} />
 	);
 };
 
