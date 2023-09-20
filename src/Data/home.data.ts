@@ -61,28 +61,32 @@ export const our_chart = [
 export const instructor = {
     title: 'Ziqi Shu',
     name: 'DSI Trainee',
-        image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
     description: 'Ziqi Shu is a fourth-year undergraduate student at the University of Toronto, studying Cognitive Science and Computer Science. She is interested in applying computational models in studying human cognition and a wide range of topics in Computational Linguistics. In her spare time, Ziqi likes watching musicals, petting cats and sleeping.',
     people: [
-        // {
-        //     name: 'Zahra Shakeri',
-        //     image: 'https://hivelab-uoft.ca/images/team/zahra.jpg',
-        //     description: 'Supervisor',
-        // },
-        // {
-        //     name: 'Ziqi Shu',
-        //     image: 'https://hivelab-uoft.ca/images/team/ziqi_shu.jpeg',
-        //     description: 'Creator',
-        // }
-        // , {
-        //     name: 'Jiayu Liangm',
-        //     image: 'https://hivelab-uoft.ca/images/team/Grace.JPG',
-        //     description: 'Creator',
-        // }, {
-        //     name: 'Yong Chen',
-        //     image: 'https://hivelab-uoft.ca/images/team/yong.png',
-        //     description: 'Creator',
-        // }
+        {
+            name: 'Zahra Shakeri',
+            image: 'https://raw.githubusercontent.com/HIVE-UofT/hive-uoft/main/images/team/zahra.jpg',
+            // image: instructor_img,
+            description: 'Supervisor',
+        },
+        {
+            name: 'Ziqi Shu',
+            image: 'https://raw.githubusercontent.com/HIVE-UofT/hive-uoft/main/images/team/ziqi_shu.jpeg',
+            description: 'Creator',
+        }
+        , {
+            name: 'Jiayu Liangm',
+            image: 'https://raw.githubusercontent.com/HIVE-UofT/hive-uoft/main/images/team/Grace.JPG',
+            description: 'Creator',
+        },{
+            name: 'Aryan Sadeghi',
+            image: 'https://raw.githubusercontent.com/HIVE-UofT/hive-uoft/main/images/team/aryan.jpeg',
+            description: 'Creator',
+        }, {
+            name: 'Yong Chen',
+            image: 'https://raw.githubusercontent.com/HIVE-UofT/hive-uoft/main/images/team/yong.png',
+            description: 'Creator',
+        }
 
     ],
     logos: [toronto, dalla],

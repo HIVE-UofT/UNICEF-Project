@@ -13,34 +13,34 @@ const Instructor = () => {
 
 				<Row style={{paddingLeft: '5%'}} className=''>
 
-					<Col className='flex items-start' md={14}>
-						<div className='instructor-image'>
-							<img src={instructor.image} alt='instructor' />
-						</div>
-						<div className='instructor-info'>
-							<h2>{instructor.title}</h2>
-							<h3>{instructor.name}</h3>
-							<p>{instructor.description}</p>
-						</div>
-					</Col>
-
-					{/*<h2 className='mb-1' >{instructor.title}</h2>*/}
-					{/*<Col style={{marginLeft: '2vw'}} className='flex items-start' md={17}>*/}
-
-					{/*	{instructor.people.map((item, i) => {*/}
-					{/*			return (*/}
-					{/*				<Col  md={9}>*/}
-					{/*					<div className='instructor-image'>*/}
-					{/*						<img src={item.image} alt='instructor' />*/}
-					{/*					</div>*/}
-					{/*					<div className='instructor-info'>*/}
-					{/*						<h3>{item.name}</h3>*/}
-					{/*						<p>{item.description}</p>*/}
-					{/*					</div>*/}
-					{/*				</Col>*/}
-					{/*			);*/}
-					{/*	})}*/}
+					{/*<Col className='flex items-start' md={14}>*/}
+					{/*	<div className='instructor-image'>*/}
+					{/*		<img src={instructor.image} alt='instructor' />*/}
+					{/*	</div>*/}
+					{/*	<div className='instructor-info'>*/}
+					{/*		<h2>{instructor.title}</h2>*/}
+					{/*		<h3>{instructor.name}</h3>*/}
+					{/*		<p>{instructor.description}</p>*/}
+					{/*	</div>*/}
 					{/*</Col>*/}
+
+					<h2 className='mb-1' ></h2>
+					<Col style={{marginLeft: '2vw'}} className='flex items-start' md={17}>
+
+						{instructor.people.map((item, i) => {
+								return (
+									<Col  md={9}>
+										<div className='instructor-image'>
+											<img src={item.image} alt='instructor' />
+										</div>
+										<div className='instructor-info'>
+											<h3>{item.name}</h3>
+											<p>{item.description}</p>
+										</div>
+									</Col>
+								);
+						})}
+					</Col>
 					<Col md={6}>
 						<Col className='logos' >
 							<img className='mr-3' src={instructor.logos[0]} alt='' />
@@ -52,7 +52,11 @@ const Instructor = () => {
 							<img src={separator} />
 							<img className='ml-1 rs-col-lg-15' src={DSI} alt='' />
 							<img src={separator} />
+						</Col>
+						<Col className='logos' >
+							<img src={separator} />
 							<img className='ml-1 rs-col-lg-15' src={HiveLab} alt='' />
+							<img src={separator} />
 						</Col>
 					</Col>
 

@@ -6,6 +6,7 @@ import ContactUs from './Sections/ContactUs/index';
 import Instructor from './Sections/Instructor/index';
 import MlModel from './Sections/MlModel/index';
 import Map from "@src/Views/Pages/Home/Sections/Map";
+import Chat from "@src/Views/Pages/Home/Sections/Chat";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
 
 			<AboutUs />
 			{/*<ContactUs />*/}
+			<Chat/>
 		</div>
 	);
 };
