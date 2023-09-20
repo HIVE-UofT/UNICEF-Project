@@ -29,7 +29,7 @@ const Chat = () => {
             <div style={{display:  (isOpen? "block" : "none" )}} className="chat-popup" id="myForm">
             <div className="form-container">
                 <iframe id="serviceFrameSend"
-                        style={{height: '620px', width:'100%'}}	src="http://178.128.236.200:7861/"
+                        style={{height: '620px', width:'100%',borderRadius:"10px"}}	src="http://178.128.236.200:7861/"
                         frameBorder="0"></iframe>
                 <button type="button" className="btn cancel" onClick={closeForm}>Close</button>
             </div>
