@@ -36,7 +36,7 @@ export const our_chart = [
         section: ' ',
         title: 'Feature occurrence',
         description:
-            'The Bi-gram graph visualizes co-occurrence patterns of 30 risk factors extracted from predictive features for student school dropout. Each node represents a risk factor, and connections indicate how often two risk factors co-occur in predictive models. Adjusting the "min_freq" parameter would help you to focus on more prevalent co-occurrences. This user-friendly tool simplifies the process of selecting relevant features by tuning the \'min_freq\' until the desired patterns emerge.',
+            'The Bi-gram graph visualizes co-occurrence patterns of 30 risk factors extracted from predictive features for student school dropout. Each node represents a risk factor, and connections indicate how often two risk factors co-occur in predictive models . Adjusting the "min_freq" parameter would help you to focus on more prevalent co-occurrences. This user-friendly tool simplifies the process of selecting relevant features by tuning the \'min_freq\' until the desired patterns emerge.',
         iFrameLink: 'https://unicef-bigml.hivelab-uoft.ca/',
         frameInNewRow: false,
     },
