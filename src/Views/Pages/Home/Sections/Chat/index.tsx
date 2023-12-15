@@ -29,7 +29,7 @@ const Chat = () => {
             <div style={{display:  (isOpen? "block" : "none" )}} className="chat-popup" id="myForm">
             <div className="form-container">
                 <iframe id="serviceFrameSend"
-                        style={{height: '621px', width:'100%',borderRadius:"10px"}}	src="https://unicef-chat.hivelab-uoft.ca/"
+                        style={{height: '622px', width:'100%',borderRadius:"10px"}}	src="https://unicef-chat.hivelab-uoft.ca/"
                         frameBorder="0"></iframe>
                 <button type="button" className="btn cancel" onClick={closeForm}>Close</button>
             </div>
