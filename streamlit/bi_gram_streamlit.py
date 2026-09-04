@@ -1,5 +1,6 @@
 import io
 import csv
+from pathlib import Path
 import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
@@ -7,8 +8,9 @@ from itertools import combinations
 from collections import defaultdict
 import streamlit as st
 
-dataset1_file = './dataset_1.csv'
-dataset3_file = './dataset_3.csv'
+DATA_DIR = Path(__file__).resolve().parent
+dataset1_file = DATA_DIR / 'dataset_1.csv'
+dataset3_file = DATA_DIR / 'dataset_3.csv'
 
 def load_csv(file_path):
     with open(file_path, 'r') as file:
