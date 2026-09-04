@@ -1,4 +1,5 @@
 import streamlit as st
+from pathlib import Path
 from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -35,8 +36,9 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-df_ptg = pd.read_csv('./models/datasets/Portugal_Undergrad_dataset.csv')
-df_features = pd.read_csv('./FeatureExtraction.csv')
+APP_DIR = Path(__file__).resolve().parent
+df_ptg = pd.read_csv(APP_DIR / 'models' / 'datasets' / 'Portugal_Undergrad_dataset.csv')
+df_features = pd.read_csv(APP_DIR / 'FeatureExtraction.csv')
 
 # Collect the Non-empty values for each variable
 Countrylst = list(df_features[df_features.Country.notnull()].Country.unique())
@@ -48,7 +50,7 @@ col1, col2 = container.columns(2)
 
 # df = pd.read_csv("./models/datasets/Portugal_Undergrad_dataset.csv")  # read a CSV file inside the 'data" folder next to 'app.py'# add a title
 # col2.write(df)
-image_path = "./models/learning_curve_comparison_Portugal.png"
+image_path = APP_DIR / 'models' / 'learning_curve_comparison_Portugal.png'
 image = open(image_path, "rb")
 image_bytes = image.read()
 
@@ -114,5 +116,4 @@ if col1.button("Train Models"):
 
 
     st.success('success')
-
 
